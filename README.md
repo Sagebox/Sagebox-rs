@@ -4,8 +4,7 @@ Sagebox is a set of GUI tools that let you add windows, controls, and graphical 
 
 Sagebox is great for adding simple GUI elements to existing programs, building utilities, or experimenting with visual features. Most controls take just one or two lines: one to create it, one to use it. 
 
-Sagebox is also designed for education, hobbyist, and general creative, free-form development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control -- or to remove them.![image](https://github.com/user-
-
+Sagebox is also designed for education, hobbyist, and general creative, free-form development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control -- or to remove them.
 
 ## Why Sagebox? — Fun with Coding and Creative Programming
 
