@@ -17,9 +17,47 @@ Sagebox is also designed for education, hobbyist, and general creative, free-for
 
 Sagebox is a procedural-first GUI toolkit that lets you build console-mode programs or full graphical applications using straightforward, linear code.
 
-It follows a “simple first, scalable later” approach: one line to define a control, one line to use it. Additional options for added complexity can be added in as needed through the use of keywords in the function call.
+It follows a “simple first, scalable later” approach: one line to define a control, one line to use it. Additional options for more complexity can be added in as needed through the use of keywords in the function call.
 
-Event-driven components are also available, and can blend seamlessly with existing procedural code or scale into fully event-driven code, depending on program needs or design.
+Let’s start with a basic <i>Range</i> slider:
+
+```rust
+let range_slider = Sagebox::dev_slider("Range");    // Create a default slider with range 0-100
+
+... (later in the program)
+
+let range_value = range_slider.get_pos();               // Get the slider's position value
+```
+
+This is a simple slider that sets a default range of 0-100, created using the Dev Window, one of the ways to create a graphics slider in console-based or more graphical applications.
+
+```rust
+let range_slider = Sagebox::dev_slider_s("Range", kw::range((200,300)));    // Create a slider with range 200-300
+
+...
+
+let range_value = range_slider.get_pos();               // Get value of the slider position
+```
+
+We can easily change the slider's range by adding a keyword.  The usage of <i>slider.get_pos()</i> and <i>slider.set_pos()</i> remains the same.  The <i>_s</i> form (for "scalability") allows the addition of keywords.  
+
+With other methods, the slider can be told to fill a memory value (e.g. &mut i32 or &mut f32) as it is moved, so there’s no need to call <i>slider.get_pos()</i>.  This can abstract the GUI from routines that use the slider's real-time position without knowing about the slider or GUI. 
+
+Multiple keywords can be combined: 
+
+```rust
+let win = Sagebox::new_window()    // Create a quick, default window
+```
+
+This creates a window of default size, background color, font, and other basic window properties.
+
+```rust
+let win = Sagebox::new_window_s(kw::title("Test Window") + kw::size((400,500)) + kw::font("Courier New, 12"))
+```
+
+This adds keywords to set the title, size, and font.
+
+Event-driven components are available when needed, and can blend seamlessly with procedural code or scale into fully event-driven designs — depending on the needs of your program.
 
 ## Why Sagebox? — Fun with Coding and Creative Programming
 
