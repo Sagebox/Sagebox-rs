@@ -39,7 +39,7 @@ let range_slider = Sagebox::dev_slider_s("Range", kw::range((200,300)));    // C
 let range_value = range_slider.get_pos();               // Get value of the slider position
 ```
 
-We can easily change the slider's range by adding a keyword.  The usage of <i>slider.get_pos()</i> and <i>slider.set_pos()</i> remains the same.  The <i>_s</i> form (for "scalability") allows the addition of keywords.  
+We can easily change the slider's range by adding a keyword.  The <i>_s</i> form (for "scalability") allows the addition of keywords while keeping the simpler form simple.  
 
 With other methods, the slider can be told to fill a memory value (e.g. &mut i32 or &mut f32) as it is moved, so there’s no need to call <i>slider.get_pos()</i>.  This can abstract the GUI from routines that use the slider's real-time position without knowing about the slider or GUI. 
 
