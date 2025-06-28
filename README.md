@@ -18,6 +18,10 @@ This approach can make programming more enjoyable by enabling more freeform, exp
 ## Sagebox in a Nutshell — Three Short Examples
 Each example builds naturally on the last — from a simple window to real, usable tools.
 
+
+<details>
+    <summary>Click here to see example code and output</summary>
+    
 ```rust
 use sagebox::*; 
 
@@ -31,6 +35,14 @@ fn main() {
 
 Test text here. 
 
+</details>
+
+### More Text Heading
+
+Some Text 
+<details>
+    <summary>Click here to see example code and output</summary>
+    
 ```rust
 use sagebox::*; 
 
@@ -48,10 +60,21 @@ fn main() {
         win.fill_circle((300,200),radius,"skyblue");
     }
 }    
-  
-  
+
 ```
+
+More Text here
+
+
+  </details>
 test text
+
+### More Text Heading
+
+Some Text
+
+<details>
+    <summary>Click here to see example code and output</summary>
 
 ```rust
 use sagebox::*; 
@@ -69,6 +92,14 @@ fn main() {
 }    
   
 ```
+More Text here
+
+
+  </details>
+
+  More Text here
+
+  
 ## The Sagebox Philosophy
 
 Sagebox was written with a philosophy guiding its design approach to keep it simple and scalable.
