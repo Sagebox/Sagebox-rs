@@ -1,10 +1,25 @@
-# Sagebox-rs - A Procedural GUI Designed for Rapid, Creative Development
+<h1 align="center">Sagebox for Rust</h1>
+
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/70604831/174466253-c4310d66-c687-4864-9893-8f0f70dd4084.png">
+</p>
+
+
+# A Procedural GUI Designed for Rapid, Creative Development
 
 Sagebox is a set of GUI tools that let you add windows, controls, and graphical output to your Rust programs, all without adding a lot of event-driven or GUI-specific boilerplate code just to have graphics and controls in your program. 
 
 Sagebox is great for adding simple GUI elements to existing programs, building utilities, or experimenting with visual features. Most controls take just one or two lines: one to create it, one to use it. 
 
 Sagebox is also designed for education, hobbyist, and general creative, free-form development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control -- or to remove them.
+
+## A Procedural-First, Scalable GUI
+
+Sagebox is a procedural-first GUI toolkit that lets you build console-mode programs or full graphical applications using straightforward, linear code.
+
+It follows a “simple first, scalable later” approach: one line to define a control, one line to use it. Additional options for added complexity can be added in as needed through the use of keywords in the function call.
+
+Event-driven components are also available, and can blend seamlessly with existing procedural code or scale into fully event-driven code, depending on program needs or design.
 
 ## Why Sagebox? — Fun with Coding and Creative Programming
 
@@ -15,7 +30,8 @@ Sagebox originated from real-world industry work to produce prototypes and finis
 
 This approach can make programming more enjoyable by enabling more freeform, exploratory or ad-hoc-style coding, allowing you to concentrate more on the code you want to write rather than the interface code just to have a button, slider, color selector, or whatever else is needed.
 
-## Sagebox in a Nutshell — Three Short Examples
+## Sagebox in a Nutshell — Scaleable Functions in Three Short Examples
+
 Each example builds naturally on the last — from a simple window to real, usable tools.
 
 
