@@ -25,15 +25,10 @@ Tools and Controls in Sagebox start simple and can scale as you want to do more.
 
 Sagebox manages its own environment, so you don't have to keep track of any of the controls or widgets that are launched, unless you want to.
 
-### Sagebox stays out of the way of your code
+## Designed to stay out of the way of your code
 
-Whether a pure Console Mode program that uses Sagebox GUI controls for development, or a more graphics-based program, Sagebox does the following to stay out of your way
+Sagebox can be added to existing Rust code without changing its structure or setup—and you don’t need to write a “Sagebox program” to start using it. It works with native Rust types (like `i32`, `f32`, `(i32,i32)`) and integrates cleanly alongside other libraries, including other GUIs.
 
-- Though fairly complex beneath the surface, Sagebox acts as a simple library with GUI-based controls and graphics.
-- Sagebox code can be added onto existing code without requiring any code changes, and can be removed easily.
-- Sagebox functions accept all Rust native types
-- A Program is not required to write "Sagebox-style code" or to become a "Sagebox Program"
-- Sagebox works with all other libraries, and can be used with other GUIs
   
 ## Quick Examples (Sagebox in a Nutshell)
 
