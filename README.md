@@ -25,14 +25,16 @@ Tools and Controls in Sagebox start simple and can scale as you want to do more.
 
 Sagebox manages its own environment, so you don't have to keep track of any of the controls or widgets that are launched, unless you want to.
 
-### Sagebox Stays Out of Your Way
+### Sagebox stays out of the way of your code
 
-- <small>Bullet List Item-
-- <small>Bullet List Item-
-- <small>Bullet List Item-
-- <small>Bullet List Item-
-- <small>Bullet List Item-
+Whether a pure Console Mode program that uses Sagebox GUI controls for development, or a more graphics-based program, Sagebox does the following to stay out of your way
 
+- Though fairly complex beneath the surface, Sagebox acts as a simple library with GUI-based controls and graphics.
+- Sagebox code can be added onto existing code without requiring any code changes, and can be removed easily.
+- Sagebox functions accept all Rust native types
+- A Program is not required to write "Sagebox-style code" or to become a "Sagebox Program"
+- Sagebox works with all other libraries, and can be used with other GUIs
+  
 ## Quick Examples (Sagebox in a Nutshell)
 
 If you want some quick controls such as buttons, sliders, or some text widgets, etc., you typically use controls in two lines of code: one line to define the control, and one line to use it.
