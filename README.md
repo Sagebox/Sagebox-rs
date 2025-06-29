@@ -13,13 +13,54 @@ Sagebox is great for adding simple GUI elements to existing programs, building u
 
 Sagebox is also designed for education, hobbyist, and general creative, free-form development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control -- or to remove them.
 
-## A Procedural-First, Scalable GUI
+## Scalable, Easy-to-Use Procedural GUI Tools
 
-Sagebox is a procedural-first GUI toolkit that lets you build console-mode programs or full graphical applications using straightforward, linear code.
+Sagebox is a procedural-first GUI toolkit that lets you build console-mode programs or full graphical applications using straightforward, linear code. 
 
-It follows a “simple first, scalable later” approach: one line to define a control, one line to use it. Additional options for more complexity can be added in as needed through the use of keywords in the function call.
+Though rarely needed, for some programs, Sagebox can use event-driven components, blending seamleassly with procedural Sagebox code or scaling into a fully event-driven model. 
 
-Let’s start with a basic <i>Range</i> slider:
+Tools and Controls in Sagebox start simple and can scale as you want to do more.  Additional options for more complexity can be added in as needed through the use of keywords in the function call.
+
+Sagebox manages its own environment, so you don't have to keep track of any of the controls or widgets that are launched, unless you want to.
+
+## Quick Example (Sagebox in a Nutshell)
+
+If you want some quick controls such as buttons, sliders, or some text widgets, etc., you typically use controls in two lines of code: one line to define the control, and one line to use it.
+
+For example, if you want a slider and a button, all you need are these two lines:
+
+
+```Rust
+let box_slider = Sagebox::dev_slider("box size");
+let my_button = Sagebox::dev_button("Press me");
+```
+
+![output-dev-slider-box-0](https://user-images.githubusercontent.com/70604831/174466571-6d968e7b-3e87-4cfa-8060-602137041084.png)
+
+The above code uses the Dev Window controls (one of a few ways to create controls in Sagebox), which creates a slider labeled ***"box size"***, with a default range of 0-100 and default value of 100, followed by a button.
+
+Sagebox puts these in a window for you, and will delete them later when the program ends or the window is dismissed.
+When you want to use the controls, you can just call <i>**`box_slider.get_pos()`**</i> and <i>**`my_button.pressed()`**</i>.  You can also use <i>**`my_slider.moved()`**</i> to determine if the slider has been moved since the last time checked.
+
+
+For example,
+
+```rust
+let box_size = box_slider.get_pos();
+if my_button.pressed { println!("Button was pressed!"); }
+```
+
+You can set a custom range and default to the slider by using keywords and chaining them together when you create the slider:
+
+```rust
+let box_slider = Sagebox::dev_slider("Box Size",kw::range((10,500)) + kw::default(150));
+```
+
+![output-dev-slider-box-150](https://user-images.githubusercontent.com/70604831/174466616-fed9d593-d165-458f-9c55-84ba93524adf.png)
+
+
+
+
 
 ```rust
 let range_slider = Sagebox::dev_slider("Range");    // Create a default slider with range 0-100
