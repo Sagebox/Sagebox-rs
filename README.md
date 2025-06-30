@@ -116,7 +116,7 @@ use sagebox::*
 fn main{
     let window = Sagebox::new_window();
     window.write("Hello World!");
-    window.wait_close();
+    window.wait_close();               // Wait for user to close the window
 }
 ```
 
@@ -124,6 +124,11 @@ fn main{
 
 ```rust
     window.write_s("Hello World", kw::font(100) + kw::center());
+```
+
+#### Or set the font size within the text:
+```rust
+    window.write_s("{100}Hello World",kw::center());
 ```
 
 ## Table of Contents
@@ -147,6 +152,88 @@ This approach can make programming more enjoyable by enabling more freeform, exp
 Sagebox can be added to existing Rust code without changing its structure or setup—and you don’t need to write a “Sagebox program” to start using it. It works with native Rust types (like `i32`, `f32`, `(i32,i32)`) and integrates cleanly alongside other libraries, including other GUIs.
 
   
+## Using Sagebox in Console Mode
+
+![output-console-mode](https://user-images.githubusercontent.com/70604831/174466676-d8cec449-a241-4402-9b7e-0e354a4d0777.png)
+
+Sagebox can be used with GUI/Windows based programs or regular console mode programs.  In console mode, you can use Sagebox functions to help with the program
+user-interface, such as bringing up entry boxes and other dialogs, as well as before & after windows, color selectors, etc.
+
+Since these are called as simple functions, you can just put them in your code without changing your style or interfering with the rest of your code.
+
+Console-based programs can use Sagebox for development even when the end-product doesn't have any UI or GUI components, or can use some of the GUI-based library
+calls to help with user input and program flow while developing and debugging. 
+
+
+# Fun with Graphics
+
+![output-collage-graphics](https://user-images.githubusercontent.com/70604831/174466730-86c6f38a-e743-4f97-be99-8d84be64d39f.png)
+
+Sagebox can also be used as a full GUI when you want.  Sagebox has a lot of graphics and other functions to allow building GUI-based applications.
+
+You can place specific controls, create graphic buttons, as well as use many drawing graphics functions. 
+
+Sagebox can also be used as a full GUI when you want, staying out of the way when you don't.
+
+Sagebox has a lot of graphics and other functions to allow building GUI-based applications, the above collage showing some programs using the Sagebox graphics
+functions.  For most of these programs,  the Sagebox usage is just a few lines of code, outputting the results of whatever the code is generating.
+
+# Standalone and 3rd-Party Widgets
+
+![output-collage-widgets](https://user-images.githubusercontent.com/70604831/174466845-3b17fbe1-85bc-43f8-9f38-6dd1e248f8af.png)
+
+Sagebox has a lot of support for writing widgets, with many pre-made widgets coming soon now that the Alpha release is out. 
+
+Widgets can be completely standalone and used on their own with just a call, and do not need a GUI interface.  Anyone can write a widget that can be
+used as a standalone object for use with any program. 
+
+The above examples are the Color Selector, Dial Example Widget, LCD Example Widget, and Spline Widget.
+
+### Embedding Widgets into Windows
+
+![output-emulation](https://user-images.githubusercontent.com/70604831/174466885-1ac37379-5cb0-4538-83c5-1cefeab58dea.png)
+
+Widgets can be embedded seamlessly into a window to create a larger GUI-based interface with little code. 
+
+The above is an example of using two widgets together to emulate or control an Arduino or other hardware.
+
+When the dial is moved by the user, the LCD reflects the Dial value, which is also printed to the window using different colors to highlight the values.  The LCD widget is placed on a circuit board image, and the Dial Widget is placed on a stucco background to emulate a wall. 
+A smaller child window is created to show the display, and two buttons are added to start/stop the emulation and quit the program.   
+There is also a nice rounded title bar on top. 
+
+
+# Fast Real-Time 3-D GPU Graphics
+
+![output-collage-gpu](https://user-images.githubusercontent.com/70604831/174467047-dda08078-cf76-4d76-af24-7689271d5a56.png)
+
+Soon to be released, Sagebox features fast, real-time 3-D GPU functions.  Shown above are some examples of real-time 60fps+, high-resolution graphics using the GPU.
+These are taking roughly 30us of microprocessor time when rendering over 1 million pixels. 
+
+To render 1 million changing pixels in real-time can also be done in just a few milliseconds with the multi-threading AVX functions written for
+Sagebox (most of which are expected to be released into open-source). 
+
+These functions will be released soon, with more coming in the next few months for creating programs with GPU-based real-time graphics. 
+
+# High Performance Computing: Super-Fast AVX, Multi-Threading Functions
+
+![output-collage-avx-both](https://user-images.githubusercontent.com/70604831/174681183-a4fd9c49-b98c-4247-8817-537682f5a5fa.png)
+
+Sagebox and Sagebox was originally started as a platform to develop and explore a number of different projects, such as GPU-based projects, neural networking
+and so-forth. 
+
+With Sagelight Image Editor and other projects, a lot of multi-threading AVX/SIMD code was written for very fast processing. 
+
+Now that Sagebox is released, these functions will follow shortly, mostly released as open source. 
+
+Some examples are shown above, all multi-threaded AVX/SIMD functionality, such as the Gaussian/Sinc/Kernel Blur shown above, transferred from Sagelight
+Image Editor and other source code, with more coming. 
+
+The example to the right shows a still from a real-time, constantly re-generated texture with 1 million polygons that is actually created on the CPU and transferred
+to the GPU twice as fast as sending it directly to the GPU due to the AVX it uses  -- it's actually a 2D image where it is much faster to process
+the polygons, lighting, and reflections on the CPU than it is to have the GPU do it, thanks to AVX.  This adds a lot of power to creating quick, easy, and
+generic functions with the GPU. 
+
+Look for releases in the next few weeks after this initial Sagebox release.
 
   
 ## The Sagebox Philosophy
