@@ -135,7 +135,9 @@ fn main{
 - [Why Sagebox? — Fun with Coding and Creative Programming](#why-sagebox--fun-with-coding-and-creative-programming)
 - [Designed to stay out of the way of your code](#designed-to-stay-out-of-the-way-of-your-code)
 - Beta Version
-- Project Roadmap
+- [Sagebox Roadmap](#roadmap)
+- [Support Sagebox](#support-sagebox)
+- [Contributing](#contributing)
 
 ## Why Sagebox? — Fun with Coding and Creative Programming
 
@@ -234,6 +236,53 @@ the polygons, lighting, and reflections on the CPU than it is to have the GPU do
 generic functions with the GPU. 
 
 Look for releases in the next few weeks after this initial Sagebox release.
+
+
+# Roadmap
+
+The roadmap below outlines major goals for Sagebox development. Feedback and contributions may influence the order or scope of each item.
+
+- **✓ Initial Rust Release (v0.1)**  
+  Procedural GUI core with windows, controls, developer tools, and console-mode integration.
+
+- **• Enhanced Widget System**  
+  Expand built-in controls (e.g., list boxes, tables, tree views) with scalable customization.
+
+- **• Linux & Cross-Platform Support**  
+  Early internal builds running on Linux; full cross-platform support is planned.
+
+- **• Real-Time Graphics and Animation Tools**  
+  High-performance drawing primitives, image composition, and 60fps animation helpers.
+
+- **• Advanced Layout Tools**  
+  Optional auto-layout, alignment guides, and docking systems while preserving manual control.
+
+- **• IDE / Editor Integration (Experimental)**  
+  Prototypes for real-time GUI iteration, possibly with REPL or editor-based live updates.
+
+**Legend:**  
+✓ Completed • Planned / In Progress
+
+
+## Support Sagebox
+
+Sagebox is developed independently to explore new directions in expressive, procedural-first GUI programming for Rust.
+
+If you'd like to support continued development:
+
+- **[GitHub Sponsors](https://github.com/sponsors/YOUR_USERNAME)** — One-time or recurring donations.
+- **[OpenCollective (Coming Soon)]** — For larger or institutional support, with public transparency.
+
+Your support helps fund new features, improve documentation, and prioritize cross-platform compatibility.
+
+## Contributing
+
+Sagebox is still evolving — not just as a library, but as a direction. If you’re building something with it, running into limits, or thinking “this would be easier if…”, those are exactly the kinds of insights that shape where it goes next.
+
+Whether it’s opening an issue, improving examples, offering feedback on API ergonomics, or suggesting a small utility that would make things smoother — contributions don’t need to be code-heavy to be meaningful.
+
+The goal is to keep Sagebox clear, focused, and useful in the real world. If you want to help shape that, you’re welcome to be part of it.
+
 
   
 ## The Sagebox Philosophy
