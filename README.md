@@ -25,11 +25,7 @@ Tools and Controls in Sagebox start simple and can scale as you want to do more.
 
 Sagebox manages its own environment, so you don't have to keep track of any of the controls or widgets that are launched, unless you want to.
 
-## Designed to stay out of the way of your code
 
-Sagebox can be added to existing Rust code without changing its structure or setup—and you don’t need to write a “Sagebox program” to start using it. It works with native Rust types (like `i32`, `f32`, `(i32,i32)`) and integrates cleanly alongside other libraries, including other GUIs.
-
-  
 ## Quick Examples (Sagebox in a Nutshell)
 
 If you want some quick controls such as buttons, sliders, or some text widgets, etc., you typically use controls in two lines of code: one line to define the control, and one line to use it.
@@ -91,7 +87,7 @@ all with just simple function calls without event-driven or GUI programming, rep
 
 The middle image, for example, is a one-line function call:
 
-```C++
+```rust
 Sagebox::image_view_before_after(&image1,&image2);
 ```
 
@@ -99,6 +95,12 @@ where elements can be added to extend its functionality, and the return class ca
 <br /><br />
 
 
+
+## Table of Contents
+- [Why Sagebox? — Fun with Coding and Creative Programming](#why-sagebox--fun-with-coding-and-creative-programming)
+- [Designed to stay out of the way of your code](#designed-to-stay-out-of-the-way-of-your-code)
+- Beta Version
+- Project Roadmap
 
 ## Why Sagebox? — Fun with Coding and Creative Programming
 
@@ -109,90 +111,12 @@ Sagebox originated from real-world industry work to produce prototypes and finis
 
 This approach can make programming more enjoyable by enabling more freeform, exploratory or ad-hoc-style coding, allowing you to concentrate more on the code you want to write rather than the interface code just to have a button, slider, color selector, or whatever else is needed.
 
-## Sagebox in a Nutshell — Scaleable Functions in Three Short Examples
+ 
+## Designed to stay out of the way of your code
 
-Each example builds naturally on the last — from a simple window to real, usable tools.
+Sagebox can be added to existing Rust code without changing its structure or setup—and you don’t need to write a “Sagebox program” to start using it. It works with native Rust types (like `i32`, `f32`, `(i32,i32)`) and integrates cleanly alongside other libraries, including other GUIs.
 
-
-<details>
-    <summary>Click here to see example code and output</summary>
-    
-```rust
-use sagebox::*; 
-
-fn main() {
-    let win = Sagebox::new_window();                   // Create a default-sized window
-        let radius = 150;                              // Static value
-        win.fill_circle((300,200),radius,"skyblue");
-        win.wait_for_close();                          // Wait for the user to close the window
-   }
-```
-
-Test text here. 
-
-</details>
-
-### More Text Heading
-
-Some Text 
-<details>
-    <summary>Click here to see example code and output</summary>
-    
-```rust
-use sagebox::*; 
-
-fn main() {
-    let win = Sagebox::new_window();                   // Create a default-sized window
-    let radius_slider = Sagebox::dev_slider("Radius"); // Slider auto-placed in Dev Window
-
-    // Now we're entering a loop where we can look at or simply ignore events like mouse clicks, button presses, etc.,
-    // including our radius_slider moving or changing value.
-
-    while win.wait_event() {                           // Exist when the user closes the window (or exit signal)
-        win.cls();                                     // Clear the window Canvas. 
-        let radius = radius_slider.get_pos();          // Set a dynamic radius set by slider value
-        win.write("Hello, World!");                    // Default 12pt in top-left (styled/centered in next example)
-        win.fill_circle((300,200),radius,"skyblue");
-    }
-}    
-
-```
-
-More Text here
-
-
-  </details>
-test text
-
-### More Text Heading
-
-Some Text
-
-<details>
-    <summary>Click here to see example code and output</summary>
-
-```rust
-use sagebox::*; 
-
-fn main() {
-    let win = Sagebox::new_window();                                            // Create a default-sized window
-    let radius_slider = Sagebox::dev_slider_s("Radius",Kw::range((50,300)));    // Set user-defined slider range
-
-    while win.wait_event() {                                                    // Our main loop
-        win.cls();                                                              // Clear the window Canvas. 
-        let radius = radius_slider.get_pos();                                   // Set a dynamic radius set by slider value
-        win.write_s("Hello, World!",Kw::font(100) + Kw::center());              // Center it in the window and make it a 100pt font 
-        win.fill_circle((300,200),radius,"skyblue");
-    }
-}    
   
-```
-More Text here
-
-
-  </details>
-
-  More Text here
 
   
 ## The Sagebox Philosophy
