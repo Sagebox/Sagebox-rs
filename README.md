@@ -94,7 +94,37 @@ Sagebox::image_view_before_after(&image1,&image2);
 where elements can be added to extend its functionality, and the return class can be kept (or discarded) to control and manage the created window.
 <br /><br />
 
+# Getting Started
 
+### Install with Cargo
+
+```sh
+    cargo add sagebox-rs
+```
+
+### With `Cargo.toml`
+
+```sh
+    [dependencies]
+    sagebox = "0.1"
+```
+### Simple Program Example
+
+```rust
+use sagebox::*
+
+fn main{
+    let window = Sagebox::new_window();
+    window.write("Hello World!");
+    window.wait_close();
+}
+```
+
+#### For a more fun version with a 100pt font centered in the window, just use <i>`write_s()`</i> and add a couple keywords:
+
+```rust
+    window.write_s("Hello World", kw::font(100) + kw::center());
+```
 
 ## Table of Contents
 - [Why Sagebox? — Fun with Coding and Creative Programming](#why-sagebox--fun-with-coding-and-creative-programming)
