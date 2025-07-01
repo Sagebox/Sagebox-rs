@@ -1,0 +1,12 @@
+[package]
+name = "dial_widget"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+link_dynamic = []
+
+[dependencies]
+
+sagebox = { path = "../../../../sagebox"}  
+#sagebox = { path = "../../../../sagebox", features = [ "link_dynamic"]  }    # uncomment to link to sagebox.dll

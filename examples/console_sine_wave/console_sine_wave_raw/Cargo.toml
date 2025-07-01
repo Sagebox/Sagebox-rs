@@ -1,0 +1,6 @@
+[package]
+name = "console_sine_wave_raw"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

@@ -1,0 +1,14 @@
+[package]
+name = "dial_widget_plain"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+# Note: the sagebox.dll file will still need to be found because the dial widget and lcd widget looks for the dll.
+#       So, no reason to statically link with this project 
+
+sagebox = { path = "../../../sagebox"}    # uncomment to link statically
+#sagebox = { path = "../../../sagebox", features = [ "link_dynamic"]  }    # uncomment to link to sagebox.dll
+
+dial_widget = { path = "../lib/dial_widget" } 

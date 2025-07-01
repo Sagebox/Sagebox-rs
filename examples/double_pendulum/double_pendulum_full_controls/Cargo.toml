@@ -1,0 +1,9 @@
+[package]
+name = "double_pendulum_full_controls"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+sagebox = { path = "../../../sagebox"}    # uncomment to link statically     
+#sagebox = { path = "../../../sagebox", features = [ "link_dynamic"]  }    # uncomment to link to sagebox.dll 
