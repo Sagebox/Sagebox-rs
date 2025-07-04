@@ -15,16 +15,19 @@ Sagebox drops cleanly into existing code or new projects when rapidly prototypin
 
 Sagebox is also designed for education, hobbyist, and general creative, free-form development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control -- or to remove them.
 
+> Although this page focuses on procedural examples, Sagebox fully supports event-driven programming for applications built around (or that prefer) that model, and is designed to fully support both models depending on the design of your program.
+
 ## Scalable, Easy-to-Use Procedural GUI Tools
 
 Sagebox is a procedural-first GUI toolkit that lets you build console-mode programs or full graphical applications using straightforward, linear code. 
 
-Though rarely needed, for some programs, Sagebox can use event-driven components, blending seamleassly with procedural Sagebox code or scaling into a fully event-driven model. 
+
 
 Tools and Controls in Sagebox start simple and can scale as you want to do more.  Additional options for more complexity can be added in as needed through the use of keywords in the function call.
 
 Sagebox manages its own environment, so you don't have to keep track of any of the controls or widgets that are launched, unless you want to.
 
+> Sagebox has been used professionally in the tech industry by companies like Pentair and Pioneer, and most recently in the semiconductor field at ASML, where it was called “that magic program.”
 
 ## Quick Examples (Sagebox in a Nutshell)
 
