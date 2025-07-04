@@ -7,7 +7,7 @@
 
 # A High-Performance, Procedural GUI Designed for Rapid, Creative Development
 
-Sagebox is a set of GUI tools that let you add windows, controls, and graphical output to your Rust programs using procedural, linear code — without any boilerplate or the overhead of an event-driven framework. 
+Sagebox is a set of GUI tools that let you add windows, controls, and graphical output to your Rust programs using linear, procedural code — without any boilerplate, or the overhead of an event-driven framework. 
 
 Built from scratch, Sagebox was designed as a comprehensive GUI to support everything from cross-platform, high-performance applications, fun-with-graphics programs, down to very simple console-mode-only applications using GUI controls for development or release.
 
@@ -135,6 +135,11 @@ fn main{
 ## Support Active Development
 
 **Sagebox is actively developed and welcomes early support from developers and contributors.**
+
+> **Sagebox isn’t just a GUI — it’s a set of GUI-based tools.**  
+> One-line graphics display, native OS dialogs, color pickers, and visual debugging widgets — all available without changing your program’s structure.
+
+
 <p align="center">
   <a href="https://github.com/sponsors/your-username">
     <img src="https://img.shields.io/badge/Sponsor_on_GitHub-💖-e05d44?style=for-the-badge&logo=github" alt="GitHub Sponsors"/>
@@ -156,16 +161,23 @@ fn main{
 - [Why Sagebox? — Fun with Coding and Creative Programming](#why-sagebox--fun-with-coding-and-creative-programming)
 - [Designed to stay out of the way of your code](#designed-to-stay-out-of-the-way-of-your-code)
 - Beta Version
+- Event-Driven Architecture for Industry-Scale Applications <i>(in final integration)</i>
+- Fast Real-Time 3-D GPU Graphics <i>(short-term roadmap item)</i>
+- High Performance Computing: Super-Fast AVX, Multi-Threading Functions <i>(short-term roadmap item)</i>
 - [Sagebox Roadmap](#roadmap)
 - [Support Sagebox](#support-sagebox)
 - [Contributing](#contributing)
 
+<br />
+<br />
+
 ## Why Sagebox? — Fun with Coding and Creative Programming
 
-Like many programmers, I wanted to code creatively while I design. Sagebox was built as a powerful toolset to quickly add (and just as easily remove) controls, widgets, and other elements without the overhead of event-driven or complex GUI boilerplate. 
+Like many programmers, I wanted to code creatively while I design. Sagebox was built as a powerful toolset to quickly add (and just as easily remove) graphic controls, widgets, and other elements without the overhead of event-driven or complex GUI boilerplate. 
 
-Sagebox originated from real-world industry work to produce prototypes and finished products rapidly (sometimes in just hours) without sacrificing code quality. It scales with your needs to expand into your overall program, or use it as a development tool that can compile out at runtime.
+Sagebox originated as a powerful GUI toolbox from real-world industry work to produce prototypes and finished products rapidly without sacrificing code quality. 
 
+Sagebox scales with your needs to expand into your overall program, or use it as a development tool that can compile out at runtime.
 
 This approach can make programming more enjoyable by enabling more freeform, exploratory or ad-hoc-style coding, allowing you to concentrate more on the code you want to write rather than the interface code just to have a button, slider, color selector, or whatever else is needed.
 
@@ -174,18 +186,20 @@ This approach can make programming more enjoyable by enabling more freeform, exp
 
 Sagebox can be added to existing Rust code without changing its structure or setup—and you don’t need to write a “Sagebox program” to start using it. It works with native Rust types (like `i32`, `f32`, `(i32,i32)`) and integrates cleanly alongside other libraries, including other GUIs.
 
-  
+<br />
+<br />
+
 ## Using Sagebox in Console Mode
 
 ![output-console-mode](https://user-images.githubusercontent.com/70604831/174466676-d8cec449-a241-4402-9b7e-0e354a4d0777.png)
 
-Sagebox can be used for traditional graphics programs with graphics and GUI controls, or pure Console-Mode applications. 
+Sagebox can be used for traditional graphics programs with pure graphics and GUI-based controls — or pure Console-Mode applications. 
 
-In Console Mode, you can use Sagebox functions to help with the program user-interface — such as simple sliders, buttons, or other controls. You can also bring up entry boxes, quick dialogs, before & after graphics windows, color selectors, or other widgets.
+In Console Mode, you can use Sagebox functions to help with the program user-interface, such as simple sliders, buttons, or other controls. You can also bring up entry boxes, quick dialogs, before & after graphics windows, color selectors, or other widgets.
 
 Because these are just simple function calls, you can put them into your existing code without changing your structure or interfering with the rest of your code.
 
-Even if your end-product code doesn’t use any GUI Controls, Sagebox can still be useful during development — helping with user input and visualizing program flow while you’re developing and debugging.
+Even if your end-product code doesn’t use any GUI-based graphic controls, Sagebox can still be useful during development, helping with user input and visualizing program flow while you’re developing and debugging.
 
 <br />
 <br />
@@ -200,7 +214,7 @@ You can place specific controls, create graphic buttons, and use a wide range of
 
 Sagebox is designed to provide a full range of graphics and GUI controls when you want them — and stay out of the way when you don’t.
 
-The image above shows various programs created with Sagebox — from simple visuals to full applications. For most programs, graphics are generated with just a few lines of code, with some coming from more complex, larger-scale applications.
+The image above shows various programs created with Sagebox, from simple visuals to full applications. For most programs, graphics are generated with just a few lines of code, with some coming from more complex, larger-scale applications.
 
 <br />
 <br />
@@ -231,7 +245,7 @@ A smaller child window is created to show the display, and two buttons are added
 There is also a nice rounded title bar on top. 
 
 
-# Fast Real-Time 3-D GPU Graphics
+# Fast Real-Time 3-D GPU Graphics <i>(short-term roadmap item)</i>
 
 ![output-collage-gpu](https://user-images.githubusercontent.com/70604831/174467047-dda08078-cf76-4d76-af24-7689271d5a56.png)
 
@@ -243,7 +257,7 @@ Sagebox (most of which are expected to be released into open-source).
 
 These functions will be released soon, with more coming in the next few months for creating programs with GPU-based real-time graphics. 
 
-# High Performance Computing: Super-Fast AVX, Multi-Threading Functions
+# High Performance Computing: Super-Fast AVX, Multi-Threading Functions <i>(short-term roadmap item)</i>
 
 ![output-collage-avx-both](https://user-images.githubusercontent.com/70604831/174681183-a4fd9c49-b98c-4247-8817-537682f5a5fa.png)
 
@@ -262,8 +276,19 @@ to the GPU twice as fast as sending it directly to the GPU due to the AVX it use
 the polygons, lighting, and reflections on the CPU than it is to have the GPU do it, thanks to AVX.  This adds a lot of power to creating quick, easy, and
 generic functions with the GPU. 
 
+<br />
+<br />
+
 Look for releases in the next few weeks after this initial Sagebox release.
 
+# Event-Driven Architecture for Industry-Scale Applications (in final integration)
+
+Fully event-driven support is already implemented in the Sagebox core and is being integrated into Rust, with attention focused on ensuring memory safety and catching any last interfacing hiccups.
+
+
+
+<br />
+<br />
 
 # Roadmap
 
