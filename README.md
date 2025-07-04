@@ -131,6 +131,27 @@ fn main{
     window.write_s("{100}Hello World",kw::center());
 ```
 
+---
+## Support Active Development
+
+**Sagebox is actively developed and welcomes early support from developers and contributors.**
+<p align="center">
+  <a href="https://github.com/sponsors/your-username">
+    <img src="https://img.shields.io/badge/Sponsor_on_GitHub-💖-e05d44?style=for-the-badge&logo=github" alt="GitHub Sponsors"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/your-username/sagebox">
+    <img src="https://img.shields.io/badge/Sagebox_Project-🌿-20c997?style=for-the-badge&logo=rust" alt="Sagebox on GitHub"/>
+  </a>
+</p>
+
+<p align="center">
+  <em>If Sagebox looks useful, please consider starring or sponsoring the project.<br>
+  Even small support helps move it forward during active development.</em>
+</p>
+
+---
+
 ## Table of Contents
 - [Why Sagebox? — Fun with Coding and Creative Programming](#why-sagebox--fun-with-coding-and-creative-programming)
 - [Designed to stay out of the way of your code](#designed-to-stay-out-of-the-way-of-your-code)
@@ -166,18 +187,23 @@ Because these are just simple function calls, you can put them into your existin
 
 Even if your end-product code doesn’t use any GUI Controls, Sagebox can still be useful during development — helping with user input and visualizing program flow while you’re developing and debugging.
 
+<br />
+<br />
+
 # Fun with Graphics
 
 ![output-collage-graphics](https://user-images.githubusercontent.com/70604831/174466730-86c6f38a-e743-4f97-be99-8d84be64d39f.png)
 
-Sagebox can also be used as a full GUI when you want.  Sagebox has a lot of graphics and other functions to allow building GUI-based applications.
+Sagebox can also be used as a full GUI when you want it — with graphics, controls, and built-in support for creating GUI-based applications.
 
-You can place specific controls, create graphic buttons, as well as use many drawing graphics functions. 
+You can place specific controls, create graphic buttons, and use a wide range of drawing and other graphics functions together.
 
-Sagebox can also be used as a full GUI when you want, staying out of the way when you don't.
+Sagebox is designed to provide a full range of graphics and GUI controls when you want them — and stay out of the way when you don’t.
 
-Sagebox has a lot of graphics and other functions to allow building GUI-based applications, the above collage showing some programs using the Sagebox graphics
-functions.  For most of these programs,  the Sagebox usage is just a few lines of code, outputting the results of whatever the code is generating.
+The image above shows various programs created with Sagebox — from simple visuals to full applications. For most programs, graphics are generated with just a few lines of code, with some coming from more complex, larger-scale applications.
+
+<br />
+<br />
 
 # Standalone and 3rd-Party Widgets
 
@@ -189,6 +215,8 @@ Widgets can be completely standalone and used on their own with just a call, and
 used as a standalone object for use with any program. 
 
 The above examples are the Color Selector, Dial Example Widget, LCD Example Widget, and Spline Widget.
+
+
 
 ### Embedding Widgets into Windows
 
