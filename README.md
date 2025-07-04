@@ -158,14 +158,13 @@ Sagebox can be added to existing Rust code without changing its structure or set
 
 ![output-console-mode](https://user-images.githubusercontent.com/70604831/174466676-d8cec449-a241-4402-9b7e-0e354a4d0777.png)
 
-Sagebox can be used with GUI/Windows based programs or regular console mode programs.  In console mode, you can use Sagebox functions to help with the program
-user-interface, such as bringing up entry boxes and other dialogs, as well as before & after windows, color selectors, etc.
+Sagebox can be used for traditional graphics programs with graphics and GUI controls, or pure Console-Mode applications. 
 
-Since these are called as simple functions, you can just put them in your code without changing your style or interfering with the rest of your code.
+In Console Mode, you can use Sagebox functions to help with the program user-interface — such as simple sliders, buttons, or other controls. You can also bring up entry boxes, quick dialogs, before & after graphics windows, color selectors, or other widgets.
 
-Console-based programs can use Sagebox for development even when the end-product doesn't have any UI or GUI components, or can use some of the GUI-based library
-calls to help with user input and program flow while developing and debugging. 
+Because these are just simple function calls, you can put them into your existing code without changing your structure or interfering with the rest of your code.
 
+Even if your end-product code doesn’t use any GUI Controls, Sagebox can still be useful during development — helping with user input and visualizing program flow while you’re developing and debugging.
 
 # Fun with Graphics
 
