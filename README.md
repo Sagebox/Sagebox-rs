@@ -29,7 +29,7 @@ Sagebox manages its own environment, so you don't have to keep track of any of t
 
 ## Quick Examples (Sagebox in a Nutshell)
 
-To create quick controls such as buttons, sliders, or text widgets, etc., you typically use controls in two lines of code: one line to define the control, and one line to use it.
+To create quick controls such as buttons, sliders, or text widgets, etc., you typically create and use controls with two lines of code: one line to define the control, and one line to use it.
 
 For example, if you want a slider and a button, all you need are these two lines:
 
