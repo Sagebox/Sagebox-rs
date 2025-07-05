@@ -29,9 +29,9 @@ Sagebox manages its own environment, so you don't have to keep track of any of t
 
 ## Quick Examples (Sagebox in a Nutshell)
 
-To create quick controls such as buttons, sliders, or text widgets, etc., you typically create and use controls with two lines of code: one line to define the control, and one line to use it.
+To create quick controls such as buttons, sliders, or text widgets, etc., you typically do this with two lines of code: one line to define the control, and one line to use it.
 
-For example, if you want a slider and a button, all you need are these two lines:
+For example, if you want a slider and a button, all you need are these two lines of code:
 
 
 ```Rust
@@ -41,7 +41,7 @@ let my_button = Sagebox::dev_button("Press me");
 
 ![output-dev-slider-box-0](https://user-images.githubusercontent.com/70604831/174466571-6d968e7b-3e87-4cfa-8060-602137041084.png)
 
-The above code uses the Dev Window controls (one of a few ways to create controls in Sagebox), which creates a slider labeled ***"box size"***, with a default range of 0-100 and default value of 100, followed by a button.
+The above code uses the Dev Window controls (one of a few ways to create controls in Sagebox), which creates a slider labeled ***"box size"***, with a default range of 0-100 and default value of 0, followed by a button.
 
 Sagebox puts these in a window for you, and will delete them later when the program ends or the window is dismissed.
 When you want to use the controls, you can just call <i>**`box_slider.get_pos()`**</i> and <i>**`my_button.pressed()`**</i>.  You can also use <i>**`my_slider.moved()`**</i> to determine if the slider has been moved since the last time checked.
@@ -51,10 +51,10 @@ For example,
 
 ```rust
 let box_size = box_slider.get_pos();
-if my_button.pressed { println!("Button was pressed!"); }
+if my_button.pressed() { println!("Button was pressed!"); }
 ```
 
-You can set a custom range and default to the slider by using keywords and chaining them together when you create the slider:
+You can set a custom range and default value of the slider by using keywords and chaining them together when you create the slider:
 
 
 ```rust
@@ -70,12 +70,12 @@ Now the slider has a range of 10-500, and a default of 150, as shown in the imag
 
 With other slider functions, the slider can be told to fill a memory value (e.g. <i>`&mut i32`</i> or <i>`&mut f32`</i>) as it is moved, so there’s no need to call <i>**box_slider.get_pos()**</i>. This can abstract the GUI from routines that use the slider's real-time position without knowing about the slider or GUI.
 
-Sliders, radio buttons, checkboxes, input boxes, list-boxes, text widgets, and other controls are all this easy to use, and can be scaled to more complexity.
+Sliders, radio buttons, checkboxes, input boxes, list-boxes, and other controls are all this easy to use, and can be scaled to more complexity.
 
 
-With various widgets, you can call up color selectors, date pickers, formatted message boxes, image view & img before/after windows, and so-forth.
+With various widgets, you can call up color selectors, date pickers, formatted message boxes, image view & image before/after windows, and so-forth.
 
-This really represents Sagebox in a nutshell -- all examples for Sagebox (even the larger, more comprehensive ones), use the above approach, just with more Sagebox tools and functions.
+This basically represents Sagebox in a nutshell -- all examples for Sagebox (even the larger, more comprehensive ones), use the above approach, just with more Sagebox tools and functions.
 
 
 ## Simple and Powerful
@@ -92,7 +92,7 @@ The middle image, for example, is a one-line function call:
 Sagebox::image_view_before_after(&image1,&image2);
 ```
 
-where elements can be added to extend its functionality, and the return class can be kept (or discarded) to control and manage the created window.
+This function can be called as a single function call, with no prior Sagebox initalization. Elements can be added to extend its functionality, and the return class can be kept (or discarded) to control and manage the created window.
 <br /><br />
 
 # Getting Started
