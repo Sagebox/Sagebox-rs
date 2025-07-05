@@ -272,22 +272,6 @@ Planned for release in the the short-term roadmap, with additional tools for bui
 
 ![output-collage-avx-both](https://user-images.githubusercontent.com/70604831/174681183-a4fd9c49-b98c-4247-8817-537682f5a5fa.png)
 
-Sagebox was originally started as a platform to develop and explore a number of different projects, such as GPU-based projects, neural networking
-and so-forth. 
-
-With Sagelight Image Editor and other projects, a lot of multi-threading AVX/SIMD code was written for very fast processing. 
-
-Now that Sagebox is released, these functions will follow shortly, mostly released as open source. 
-
-Some examples are shown above, all multi-threaded AVX/SIMD functionality, such as the Gaussian/Sinc/Kernel Blur shown above, transferred from Sagelight
-Image Editor and other source code, with more coming. 
-
-The example to the right shows a still from a real-time, constantly re-generated texture with 1 million polygons that is actually created on the CPU and transferred
-to the GPU twice as fast as sending it directly to the GPU due to the AVX it uses  -- it's actually a 2D image where it is much faster to process
-the polygons, lighting, and reflections on the CPU than it is to have the GPU do it, thanks to AVX.  This adds a lot of power to creating quick, easy, and
-generic functions with the GPU. 
-
-----
 Sagebox includes a number of high-performance, multi-threaded AVX/SIMD functions used for real-time image processing, FFT functions, mathematical or data visualization, etc.
 
 These components are built for maximum throughput and speed when using the traditonal CPU-based image processing functions.
