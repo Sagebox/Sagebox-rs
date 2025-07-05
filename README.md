@@ -254,6 +254,8 @@ When the dial is moved, the LCD reflects its value in real time, and the same va
 
 The main interface window also uses a custom design with a rounded title bar and integrated graphic, for a more polished appearance than standard OS-provided window and title bar.
 
+<br />
+<br />
 
 # Fast Real-Time 3-D GPU Graphics <i>(short-term roadmap item)</i>
 
@@ -262,6 +264,9 @@ The main interface window also uses a custom design with a rounded title bar and
 Sagebox's design includes a high-performance GPU graphics module for real-time 3-D visualization. The examples above demonstrate 60+ FPS rendering of complex, high-resolution surfaces — often exceeding three million polygons per frame — with minimal CPU usage.
 
 Planned for release in the the short-term roadmap, with additional tools for building GPU-accelerated applications released in the following months.
+
+<br />
+<br />
 
 # High Performance Computing: Super-Fast AVX, Multi-Threading Functions <i>(short-term roadmap item)</i>
 
@@ -314,36 +319,37 @@ This event-driven design means Sagebox has supported fully event-driven programm
 
 Full access to the event-driven framework is currently being integrated into the Rust interface, with emphasis on memory safety, Rust idiomatic usage, and Borrow Checker requirements.
 
-<br />
-<br />
+---
 
 # Roadmap
 
-The roadmap below outlines major goals for Sagebox development. Feedback and contributions may influence the order or scope of each item.
+Sagebox is designed with long-term goals that extend well beyond the initial release. Many of the features below are already in progress or planned for future development. 
 
-- **✓ Initial Rust Release (v0.1)**  
-  Procedural GUI core with windows, controls, developer tools, and console-mode integration.
+As Sagebox grows, these and more items will appear in future releases.  
 
-- **• Enhanced Widget System**  
-  Expand built-in controls (e.g., list boxes, tables, tree views) with scalable customization.
+In addition to supporting quick, procedural creative flow, Sagebox is also rooted in serious development  for things like —  such as internal tooling, rapid prototyping, emulation, and GUI-based software 
+used in critical systems.
 
-- **• Linux & Cross-Platform Support**  
-  Early internal builds running on Linux; full cross-platform support is planned.
+Feedback from the Rust community will help guide which features they'd like to see with more priority, or features not listed:
 
-- **• Real-Time Graphics and Animation Tools**  
-  High-performance drawing primitives, image composition, and 60fps animation helpers.
+- Linux Implementation
+  - A working Linux prototype is a high priority, with early builds targeted for 3–4 months after the initial release.
+- Powerful GPU Functions 
+  - As shown above, GPU functions are already well underway, and will work with the same Sagebox philosophy of ease-of-use and scalability.
+- Designer Controls and Skins
+  - Sagebox includes a range of built-in controls (e.g., sliders, buttons, input boxes), and developers can create plug-in widgets.
+  - Expanded custom-skin support and the ability to define fully custom controls are currently in progress.
+- Other Platforms.
+- Sagebox is written as platform-agnostic kernel.  Adding Android, macOS, and other platforms is a directional goal. 
+- Fast, AVX image-processing functions
+  - Sagebox originated from the Sagelight Editor, which was heavily optimized with AVX-level code. The plan is to bring many of those fast image-processing routines into Sagebox as general-purpose functions, or possibly as a separate interfacing library that may be released as open source.
+  - Several of these functions are already used internally in Sagebox, and others produce compelling graphical examples — making it practical and worthwhile to expose them as standalone tools developers can use in their own projects.
+  - Educational
+    While Sagebox already works well in educational contexts, the plan is to expand on this with ready-to-use "lab spaces" and other specific widgets and procedural frameworks to make implementation of GUI-based graphics and controls in a way where they don't become a significant part of the code just for a small project. 
+		 
+As Sagebox continues to grow, the developer community is invited to help shape its direction and contribute to making it even better.
 
-- **• Advanced Layout Tools**  
-  Optional auto-layout, alignment guides, and docking systems while preserving manual control.
-
-- **• IDE / Editor Integration (Experimental)**  
-  Prototypes for real-time GUI iteration, possibly with REPL or editor-based live updates.
-
-**Legend:**  
-✓ Completed • Planned / In Progress
-
-
-## Support Sagebox
+# Support Sagebox
 
 Sagebox is actively developed and welcomes early support from developers and contributors.
 Supporting the project helps prioritize key improvements, expand cross-platform capabilities, and maintain the momentum of a long-term, high-performance GUI system purpose-built for Rust.
@@ -355,28 +361,12 @@ If Sagebox feels like something worth supporting, consider contributing to its c
 
 Your support helps fund new features, improve documentation, and prioritize cross-platform compatibility, along with other planned improvements.
 
-## Contributing
+
+# Contributing
 
 Sagebox is still evolving — not just as a library, but as a direction. If you’re building something with it, running into limits, or thinking “this would be easier if…”, those are exactly the kinds of insights that shape where it goes next.
 
 Whether it’s opening an issue, improving examples, offering feedback on API ergonomics, or suggesting a small utility that would make things smoother — contributions don’t need to be code-heavy to be meaningful.
 
 The goal is to keep Sagebox clear, focused, and useful in the real world. If you want to help shape that, you’re welcome to be part of it.
-
-
-  
-## The Sagebox Philosophy
-
-Sagebox was written with a philosophy guiding its design approach to keep it simple and scalable.
-
-<details>
-  <summary>What Drives Sagebox</summary>
-
-  - **Procedural by design** — No event loops, callbacks, or framework ceremonies  
-  - **Zero boilerplate** — Add GUI elements with single function calls  
-  - **Rapid iteration** — Experiment freely without architectural overhead  
-  - **Scales with your needs** — From quick prototypes to production-ready applications  
-  - **Developer-first** — Built for how programmers actually think and work  
-
-</details>
 
