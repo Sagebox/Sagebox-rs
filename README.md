@@ -92,7 +92,7 @@ The middle image, for example, is a one-line function call:
 Sagebox::image_view_before_after(&image1,&image2);
 ```
 
-This can be called as a single function call, with no prior Sagebox initalization. Keyword elements can be added to extend its functionality, and the returned object can kept by the program to manage the window, or simply discarded to let Sagebox manage it on your program's behalf while the code continues on. 
+This can be called as a single function call, with no prior Sagebox initalization. Keyword elements can be added to extend its functionality, and the returned object can be kept by the program to manage the new window, or simply discarded to let Sagebox manage it on your program's behalf while the code continues on. 
 <br /><br />
 
 # Getting Started
@@ -100,14 +100,14 @@ This can be called as a single function call, with no prior Sagebox initalizatio
 ### Install with Cargo
 
 ```sh
-    cargo add sagebox-rs
+    cargo add sagebox
 ```
 
 ### With `Cargo.toml`
 
 ```sh
     [dependencies]
-    sagebox = "0.1"
+    sagebox = "0.1.0"
 ```
 ### Simple Program Example
 
