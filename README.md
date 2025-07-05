@@ -164,7 +164,7 @@ fn main{
 - [Why Sagebox? — Fun with Coding and Creative Programming](#why-sagebox--fun-with-coding-and-creative-programming)
 - [Designed to stay out of the way of your code](#designed-to-stay-out-of-the-way-of-your-code)
 - Beta Version
-- Event-Driven Architecture for Industry-Scale Applications <i>(in final integration)</i>
+- Event-Driven Architecture for Large-Scale Applications <i>(in final integration)</i>
 - Fast Real-Time 3-D GPU Graphics <i>(short-term roadmap item)</i>
 - High Performance Computing: Super-Fast AVX, Multi-Threading Functions <i>(short-term roadmap item)</i>
 - [Sagebox Roadmap](#roadmap)
@@ -259,13 +259,9 @@ The main interface window also uses a custom design with a rounded title bar and
 
 ![output-collage-gpu](https://user-images.githubusercontent.com/70604831/174467047-dda08078-cf76-4d76-af24-7689271d5a56.png)
 
-Soon to be released, Sagebox features fast, real-time 3-D GPU functions.  Shown above are some examples of real-time 60fps+, high-resolution graphics using the GPU.
-These are taking roughly 30us of microprocessor time when rendering over 1 million pixels. 
+Sagebox's design includes a high-performance GPU graphics module for real-time 3-D visualization. The examples above demonstrate 60+ FPS rendering of complex, high-resolution surfaces — often exceeding three million polygons per frame — with minimal CPU usage.
 
-To render 1 million changing pixels in real-time can also be done in just a few milliseconds with the multi-threading AVX functions written for
-Sagebox (most of which are expected to be released into open-source). 
-
-These functions will be released soon, with more coming in the next few months for creating programs with GPU-based real-time graphics. 
+Planned for release in the the short-term roadmap, with additional tools for building GPU-accelerated applications released in the following months.
 
 # High Performance Computing: Super-Fast AVX, Multi-Threading Functions <i>(short-term roadmap item)</i>
 
@@ -286,16 +282,37 @@ to the GPU twice as fast as sending it directly to the GPU due to the AVX it use
 the polygons, lighting, and reflections on the CPU than it is to have the GPU do it, thanks to AVX.  This adds a lot of power to creating quick, easy, and
 generic functions with the GPU. 
 
+----
+Sagebox includes a number of high-performance, multi-threaded AVX/SIMD functions used for real-time image processing, FFT functions, mathematical or data visualization, etc.
+
+These components are built for maximum throughput and speed when using the traditonal CPU-based image processing functions.
+
+
+The examples above include:
+
+- A real-time Julia set rendered with AVX at 60fps in 4k,
+- AVX-based Gaussian and Sinc blur filters
+- CPU-rendered texture with over 1 million polygons
+  - The entire image was construction in the CPU before being sent to the GPU
+  - This was faster than sending the polyons to the GPU for rendering because of memory-transfer speed
+  - The CPU-generated image is indisinguishable from the GPU-generated image, and has better phong-lighting model representation than the default OpenGL phong model.
+
+Sagebox's internal image-processing core includes a set of high-performance, HPC-level, multi-threading functions.
+
+These routines are not yet part of the public API, but many are already complete and designed for future release as general-purpose tools as completely independent functions with no GUI requirements.
+The long-term roadmap is that once Sagebox’s initial release stabilizes, the timing will be based on developer feeback on which functions to release sooner than later.
+
 <br />
 <br />
 
-Look for releases in the next few weeks after this initial Sagebox release.
 
-# Event-Driven Architecture for Industry-Scale Applications (in final integration)
+# Event-Driven Architecture for Large-Scale Applications (in final integration)
 
-Fully event-driven support is already implemented in the Sagebox core and is being integrated into Rust, with attention focused on ensuring memory safety and catching any last interfacing hiccups.
+While not inherently needed for most applications, Sagebox is built on a high-performance, event-driven architecture that includes a full procedural layer that gives direct access to its full capabilities.
 
+This event-driven design means Sagebox has supported fully event-driven programming by its own nature. The included procedural model is a feature that just about any applications can use as a powerful feature stemming from Sagebox's core event-driven design.
 
+Full access to the event-driven framework is currently being integrated into the Rust interface, with emphasis on memory safety, Rust idiomatic usage, and Borrow Checker requirements.
 
 <br />
 <br />
@@ -328,14 +345,15 @@ The roadmap below outlines major goals for Sagebox development. Feedback and con
 
 ## Support Sagebox
 
-Sagebox is developed independently to explore new directions in expressive, procedural-first GUI programming for Rust.
+Sagebox is actively developed and welcomes early support from developers and contributors.
+Supporting the project helps prioritize key improvements, expand cross-platform capabilities, and maintain the momentum of a long-term, high-performance GUI system purpose-built for Rust.
 
-If you'd like to support continued development:
+If Sagebox feels like something worth supporting, consider contributing to its continued development:
 
 - **[GitHub Sponsors](https://github.com/sponsors/YOUR_USERNAME)** — One-time or recurring donations.
-- **[OpenCollective (Coming Soon)]** — For larger or institutional support, with public transparency.
+- **[OpenCollective (Coming Soon)]** — For larger or institutional support with public transparency.
 
-Your support helps fund new features, improve documentation, and prioritize cross-platform compatibility.
+Your support helps fund new features, improve documentation, and prioritize cross-platform compatibility, along with other planned improvements.
 
 ## Contributing
 
