@@ -7,27 +7,25 @@
 
 # A High-Performance, Procedural GUI Designed for Rapid, Creative Development
 
-Sagebox is a set of GUI tools that let you add windows, controls, and graphical output to your Rust programs using linear, procedural code — without any boilerplate, or the overhead of an event-driven framework. 
+Sagebox is a set of GUI tools that let you add windows, graphic controls, and graphical output to your Rust programs using linear, procedural code — without any boilerplate, or the overhead of an event-driven framework. 
 
 Built from scratch, Sagebox was designed as a platform-agnostic, comprehensive GUI — supporting everything from high-performance, cross-platform applications, fun-with-graphics programs, and console-mode-only projects using GUI controls for development or release.
 
 Sagebox drops cleanly into existing code or new projects when rapidly prototyping or exploring creative ideas.
 
-Sagebox is also designed for education, hobbyist, and general creative, free-form development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control -- or to remove them.
+Sagebox is also designed for education, hobbyist, and general creative, free-form development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control (or to remove them).
 
-> Although this page focuses on procedural examples, Sagebox fully supports event-driven programming for applications built around (or that prefer) that model, and is designed to fully support both models depending on the design of your program.
+> Sagebox has been used professionally in the tech industry by companies like Pentair and Pioneer, and most recently in the semiconductor field at ASML, where it was called “that magic program.”
 
 ## Scalable, Easy-to-Use Procedural GUI Tools
 
 Sagebox is a procedural-first GUI toolkit that lets you build console-mode programs or full graphical applications using straightforward, linear code. 
 
-
-
 Tools and Controls in Sagebox start simple and can scale as you want to do more.  Additional options for more complexity can be added in as needed through the use of keywords in the function call.
 
 Sagebox manages its own environment, so you don't have to keep track of any of the controls or widgets that are launched, unless you want to.
 
-> Sagebox has been used professionally in the tech industry by companies like Pentair and Pioneer, and most recently in the semiconductor field at ASML, where it was called “that magic program.”
+> Although this page focuses on procedural examples, Sagebox fully supports event-driven programming for applications built around (or that prefer) that model, and is designed to fully support both models depending on the design of your program.
 
 ## Quick Examples (Sagebox in a Nutshell)
 
