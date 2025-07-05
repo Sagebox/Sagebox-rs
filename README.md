@@ -92,7 +92,7 @@ The middle image, for example, is a one-line function call:
 Sagebox::image_view_before_after(&image1,&image2);
 ```
 
-This can be called as a single function call, with no prior Sagebox initalization. Keyword elements can be added to extend its functionality, and the returned object can be discarded to let Sagebox manage the created window on your behalf, or kept to specifically control and manage it.
+This can be called as a single function call, with no prior Sagebox initalization. Keyword elements can be added to extend its functionality, and the returned object can kept by the program to manage the window, or simply discarded to let Sagebox manage it on your program's behalf while the code continues on. 
 <br /><br />
 
 # Getting Started
