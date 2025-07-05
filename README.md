@@ -9,7 +9,7 @@
 
 Sagebox is a set of GUI tools that let you add windows, controls, and graphical output to your Rust programs using linear, procedural code — without any boilerplate, or the overhead of an event-driven framework. 
 
-Built from scratch, Sagebox was designed as a comprehensive GUI to support everything from cross-platform, high-performance applications, fun-with-graphics programs, down to very simple console-mode-only applications using GUI controls for development or release.
+Built from scratch, Sagebox was designed as a platform-agnostic, comprehensive GUI — supporting everything from high-performance, cross-platform applications, fun-with-graphics programs, and console-mode-only projects using GUI controls for development or release.
 
 Sagebox drops cleanly into existing code or new projects when rapidly prototyping or exploring creative ideas.
 
@@ -299,13 +299,13 @@ The long-term roadmap is that once Sagebox’s initial release stabilizes, the t
 
 While not inherently needed for most applications, Sagebox is built on a high-performance, event-driven architecture that includes a full procedural layer that gives direct access to its full capabilities.
 
-This event-driven design means Sagebox has supported fully event-driven programming by its own nature. The included procedural model is a feature that just about any applications can use as a powerful feature stemming from Sagebox's core event-driven design.
+This event-driven design means Sagebox supports fully event-driven programming by its own nature. The included procedural model is a feature that just about any applications can use as a powerful feature stemming from Sagebox's core event-driven design.
 
 Full access to the event-driven framework is currently being integrated into the Rust interface, with emphasis on memory safety, Rust idiomatic usage, and Borrow Checker requirements.
 
 ---
 
-# Roadmap
+# Sagebox Roadmap
 
 Sagebox is designed with long-term goals that extend well beyond the initial release. Many of the features below are already in progress or planned for future development. 
 
@@ -316,20 +316,20 @@ used in critical systems.
 
 Feedback from the Rust community will help guide which features they'd like to see with more priority, or features not listed:
 
-- Linux Implementation
+- **Linux Implementation**
   - A working Linux prototype is a high priority, with early builds targeted for 3–4 months after the initial release.
-- Powerful GPU Functions 
+- **Powerful GPU Functions**
   - As shown above, GPU functions are already well underway, and will work with the same Sagebox philosophy of ease-of-use and scalability.
-- Designer Controls and Skins
+- **Designer Controls and Skins**
   - Sagebox includes a range of built-in controls (e.g., sliders, buttons, input boxes), and developers can create plug-in widgets.
   - Expanded custom-skin support and the ability to define fully custom controls are currently in progress.
-- Other Platforms.
-- Sagebox is written as platform-agnostic kernel.  Adding Android, macOS, and other platforms is a directional goal. 
-- Fast, AVX image-processing functions
+- **Other Platforms**
+   - Sagebox is written as platform-agnostic kernel.  Adding Android, macOS, and other platforms is a directional goal. 
+- **Fast, AVX image-processing functions**
   - Sagebox originated from the Sagelight Editor, which was heavily optimized with AVX-level code. The plan is to bring many of those fast image-processing routines into Sagebox as general-purpose functions, or possibly as a separate interfacing library that may be released as open source.
   - Several of these functions are already used internally in Sagebox, and others produce compelling graphical examples — making it practical and worthwhile to expose them as standalone tools developers can use in their own projects.
-  - Educational
-    While Sagebox already works well in educational contexts, the plan is to expand on this with ready-to-use "lab spaces" and other specific widgets and procedural frameworks to make implementation of GUI-based graphics and controls in a way where they don't become a significant part of the code just for a small project. 
+- **Educational**
+  - While Sagebox already works well in educational contexts, the plan is to expand on this with ready-to-use "lab spaces" and other specific widgets and procedural frameworks to make implementation of GUI-based graphics and controls in a way where they don't become a significant part of the code just for a small project. 
 		 
 As Sagebox continues to grow, the developer community is invited to help shape its direction and contribute to making it even better.
 
