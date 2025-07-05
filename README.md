@@ -7,7 +7,7 @@
 
 # A High-Performance, Procedural GUI Designed for Rapid, Creative Development
 
-Sagebox is a set of GUI tools that let you add windows, graphic controls, and graphical output to your Rust programs using linear, procedural code — without any boilerplate, or the overhead of an event-driven framework. 
+Sagebox is a set of GUI tools that let you add windows, graphic controls, and graphical output to your Rust programs using linear, procedural code, without any boilerplate, or the overhead of an event-driven framework. 
 
 Built from scratch, Sagebox was designed as a platform-agnostic, comprehensive GUI — supporting everything from high-performance, cross-platform applications, fun-with-graphics programs, and console-mode-only projects using GUI controls for development or release.
 
@@ -29,7 +29,7 @@ Sagebox manages its own environment, so you don't have to keep track of any of t
 
 ## Quick Examples (Sagebox in a Nutshell)
 
-If you want some quick controls such as buttons, sliders, or some text widgets, etc., you typically use controls in two lines of code: one line to define the control, and one line to use it.
+To create quick controls such as buttons, sliders, or text widgets, etc., you typically use controls in two lines of code: one line to define the control, and one line to use it.
 
 For example, if you want a slider and a button, all you need are these two lines:
 
