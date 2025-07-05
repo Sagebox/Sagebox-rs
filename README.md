@@ -226,26 +226,33 @@ The image above shows various programs created with Sagebox, from simple visuals
 
 ![output-collage-widgets](https://user-images.githubusercontent.com/70604831/174466845-3b17fbe1-85bc-43f8-9f38-6dd1e248f8af.png)
 
-Sagebox has a lot of support for writing widgets, with many pre-made widgets coming soon now that the Alpha release is out. 
+Sagebox is designed to provide tools for developing and integrating 3rd-party plug-in controls and widgets — from dials and meters to real-world instruments like LCD panels and oscilloscopes, or any specialized GUI control you want to add to your program.
 
-Widgets can be completely standalone and used on their own with just a call, and do not need a GUI interface.  Anyone can write a widget that can be
-used as a standalone object for use with any program. 
+- Widgets can be launched from programs using Sagebox and can integrate into existing graphical windows.
+- Widgets can also be completely standalone and used on their own inside of a console-mode program with just a one function call with no prior use of Sagebox functions.
+- Sagebox will automatically create an environment to support the widget, if necessary.
 
-The above examples are the Color Selector, Dial Example Widget, LCD Example Widget, and Spline Widget.
+The entire Sagebox library is available to help create and develop the Widget, without forcing the program using it itself. 
 
+Widgets can be used in both procedural and event-driven applications, and do not need to follow the same programming model as the application that uses them.
 
+Shown above: the Color Selector, Dial Widget, LCD Display Widget, and RGB Spline Widget.  
 
-### Embedding Widgets into Windows
+> See the `plug_in_widgets` examples in the Github project examples
+
+### Embedding Widgets into Graphical Windows
 
 ![output-emulation](https://user-images.githubusercontent.com/70604831/174466885-1ac37379-5cb0-4538-83c5-1cefeab58dea.png)
 
-Widgets can be embedded seamlessly into a window to create a larger GUI-based interface with little code. 
+Widgets can be embedded seamlessly into graphical windows to create larger GUI-based interfaces with minimal code.
 
-The above is an example of using two widgets together to emulate or control an Arduino or other hardware.
+The example above shows two widgets working together to emulate and control an Arduino or other hardware interface.
 
-When the dial is moved by the user, the LCD reflects the Dial value, which is also printed to the window using different colors to highlight the values.  The LCD widget is placed on a circuit board image, and the Dial Widget is placed on a stucco background to emulate a wall. 
-A smaller child window is created to show the display, and two buttons are added to start/stop the emulation and quit the program.   
-There is also a nice rounded title bar on top. 
+The LCD is drawn over a circuit board image, while the Dial Widget sits on a stucco background to simulate placement on an indoor wall.
+
+When the dial is moved, the LCD reflects its value in real time, and the same value is printed to the lower debug window using color-coded text to highlight values.
+
+The main interface window also uses a custom design with a rounded title bar and integrated graphic, for a more polished appearance than standard OS-provided window and title bar.
 
 
 # Fast Real-Time 3-D GPU Graphics <i>(short-term roadmap item)</i>
@@ -264,7 +271,7 @@ These functions will be released soon, with more coming in the next few months f
 
 ![output-collage-avx-both](https://user-images.githubusercontent.com/70604831/174681183-a4fd9c49-b98c-4247-8817-537682f5a5fa.png)
 
-Sagebox and Sagebox was originally started as a platform to develop and explore a number of different projects, such as GPU-based projects, neural networking
+Sagebox was originally started as a platform to develop and explore a number of different projects, such as GPU-based projects, neural networking
 and so-forth. 
 
 With Sagelight Image Editor and other projects, a lot of multi-threading AVX/SIMD code was written for very fast processing. 
