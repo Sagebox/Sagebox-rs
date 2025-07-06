@@ -1,0 +1,9 @@
+[package]
+name = "handle_events"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+sagebox = { path = "../../sagebox"}
+#sagebox = { path = "../../sagebox", features = [ "link_dynamic"]  }   # uncomment to link to sagebox.dll

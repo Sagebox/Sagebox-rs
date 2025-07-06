@@ -1,0 +1,4 @@
+/target
+**/.vscode
+getlib.bat
+**/Cargo.lock

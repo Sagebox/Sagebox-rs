@@ -182,10 +182,18 @@ impl Point<f64>
 // ***************************** Point<i32> *****************************
 
 	impl std::ops::Add<Point<i32>> for Point<i32> { type Output = Point<i32>; fn add(self, _rhs: Point<i32>) -> Point<i32> { Point{ x: self.x + _rhs.x, y: self.y + _rhs.y}  } }
-	impl std::ops::Sub<Point<i32>> for Point<i32> { type Output = Point<i32>; fn sub(self, _rhs: Point<i32>) -> Point<i32> { Point{ x: self.x - _rhs.x, y: self.y - _rhs.y}  } }
-
 	impl std::ops::Add<(i32,i32)> for Point<i32>  { type Output = Point<i32>; fn add(self, _rhs: (i32,i32))  -> Point<i32> { Point{ x: self.x + _rhs.0, y: self.y + _rhs.1 } } }
-	impl std::ops::Sub<(i32,i32)> for Point<i32>  { type Output = Point<i32>; fn sub(self, _rhs: (i32,i32))  -> Point<i32> { Point{ x: self.x - _rhs.0, y: self.y - _rhs.1 } } }
-
 	impl std::ops::Add<i32> for Point<i32> 		  { type Output = Point<i32>; fn add(self, _rhs: i32) -> Point<i32> { Point{ x: self.x + _rhs, y: self.y + _rhs} } }	
+	
+	impl std::ops::Sub<Point<i32>> for Point<i32> { type Output = Point<i32>; fn sub(self, _rhs: Point<i32>) -> Point<i32> { Point{ x: self.x - _rhs.x, y: self.y - _rhs.y}  } }
+	impl std::ops::Sub<(i32,i32)> for Point<i32>  { type Output = Point<i32>; fn sub(self, _rhs: (i32,i32))  -> Point<i32> { Point{ x: self.x - _rhs.0, y: self.y - _rhs.1 } } }
 	impl std::ops::Sub<i32> for Point<i32> 		  { type Output = Point<i32>; fn sub(self, _rhs: i32) -> Point<i32> { Point{ x: self.x - _rhs, y: self.y - _rhs} } }
+	
+    impl std::ops::Mul<Point<i32>> for Point<i32> { type Output = Point<i32>; fn mul(self, _rhs: Point<i32>) -> Point<i32> { Point{ x: self.x * _rhs.x, y: self.y * _rhs.y}  } }
+	impl std::ops::Mul<(i32,i32)> for Point<i32>  { type Output = Point<i32>; fn mul(self, _rhs: (i32,i32))  -> Point<i32> { Point{ x: self.x * _rhs.0, y: self.y * _rhs.1 } } }
+	impl std::ops::Mul<i32> for Point<i32> 		  { type Output = Point<i32>; fn mul(self, _rhs: i32) -> Point<i32> { Point{ x: self.x * _rhs, y: self.y * _rhs} } }	
+	
+    impl std::ops::Div<Point<i32>> for Point<i32> { type Output = Point<i32>; fn div(self, _rhs: Point<i32>) -> Point<i32> { Point{ x: self.x / _rhs.x, y: self.y / _rhs.y}  } }
+	impl std::ops::Div<(i32,i32)> for Point<i32>  { type Output = Point<i32>; fn div(self, _rhs: (i32,i32))  -> Point<i32> { Point{ x: self.x / _rhs.0, y: self.y / _rhs.1 } } }
+	impl std::ops::Div<i32> for Point<i32> 		  { type Output = Point<i32>; fn div(self, _rhs: i32) -> Point<i32> { Point{ x: self.x / _rhs, y: self.y / _rhs} } }	
+	

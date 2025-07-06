@@ -1,18 +1,43 @@
-//! ------------------------
-//!/ Sagebox Libary Interface
-//! ------------------------
-//!
-//! ** This files is currently in a prototype/beta stage. 
-//! ** It is a small part of Sagebox meant to show Sagebox working in Rust. 
-//! ** More will be added soon, and the the mod will be split into
-//! ** different files. 
+
+
+//! Sagebox is a comprehensive set of GUI tools that lets you add windows, controls, and graphical output
+//! to your Rust programs using procedural, linear code — without boilerplate or the overhead of
+//! an event-driven framework.
 //! 
-//! The interface itself is 20% code and 80% documentation of each function.
-//!
-//! Please feel free to comment on the structure of this file.  It's important that it keeps idomatic with Rust, so 
-//! let me know if something is not right or can be better!
-//!
-//! e-mail me at rob@sagebox.org, or post on the Github project page.
+//! Built from scratch, Sagebox is designed to support everything from cross-platform, high-performance
+//! applications to simple, console-only programs with graphical controls — great for development tools,
+//! quick utilities, or full-featured applications.
+//! 
+//! Sagebox drops cleanly into existing code or new projects when rapidly prototyping or exploring creative ideas.
+//! 
+//! Sagebox is also designed for education, hobbyist, and general creative, free-form development and rapid 
+//! prototyping without the need to write a lot of interface code just to add a button, slider, or other 
+//! control -- or to remove them.
+//! 
+//! ### Features
+//! - Procedural, linear programming style
+//! - No macros or boilerplate
+//! - Console-mode support with add-on GUI-Control integration
+//! - Compatible with other GUI libraries
+//! - Accepts all Rust native types for all functions
+//! - Designed to stay out of the way of your code
+//! 
+//! ## Entire Program Example
+//! 
+//! ```rust
+//! use sagebox::*;
+//! 
+//! fn main() {
+//!     let win = Sagebox::new_window();
+//!     win.draw_circle((200,150), 100, "green"); 
+//!     win.wait_for_close();     // Wait for user to close window               
+//! }
+//! ```
+//! 
+//! For more examples and documentation, visit:  
+//! [https://github.com/Sagebox/Sagebox-rs](https://github.com/Sagebox/Sagebox-rs)
+
+
 
 #![allow(improper_ctypes)]	// So "not FFI-safe messages" do not appear
 
@@ -4284,7 +4309,7 @@ impl Window
 			_x = (v >> 32) as i32;
 			_y = (v & 0xFFFFFFFF) as i32;
 		}
-		Point::<i32>::new(_x,_y)
+		Point::<i32>::new(_x/2,_y/2)
 	}
 
 	/// Returns the center coordinates of the window in a Point<f32> format
@@ -5893,6 +5918,43 @@ impl Window
 	/// - See <i>**mouse_button_released()**</i> to determine if the user released the left mouse button and caused an event. 
 	///
 	pub fn mouse_button_down(&self) -> bool { unsafe { ext_func::sage_rust_window_mouse_clicked(self.id,false,false,true) } }
+
+	/// [**mouse_moved()**] — Returns true if the mouse was moved.
+	///
+	///	- [**note:**] This function is an <u><i>event function</i></u>: This function will only return **`true`**  <i>one time per-event and subsquent call to this function.</i>
+	///   - as an <i>event function</i>, it will return **`false`** after the first call until the event occurs again, unless a <i>peek form</i> is used to prevent resetting it's event status.. 
+	///
+	/// **Function Parameter Forms:** 
+	///	
+	///			mouse_moved()
+	///			move_moved_peek()
+	///
+	/// <u><i>**move_moved_peek()**</i></u>
+	///
+	/// - When this form is used, this will return the mouse moved status, but will not reset it if it returns true. 
+	///   - (future calls will still return true until called without peeking)
+	/// - Otherwise, when <i>**mouse_moved()**</i> is used without peeking, the mouse-moved status is reset until the next time the user moves the mouse.
+	///
+	pub fn mouse_moved(&self) -> bool { unsafe { ext_func::sage_rust_window_mouse_moved(self.id,false) } }
+
+	/// [**mouse_moved()**] — Returns true if the mouse was moved.
+	///
+	///	- [**note:**] This function is an <u><i>event function</i></u>: This function will only return **`true`**  <i>one time per-event and subsquent call to this function.</i>
+	///   - as an <i>event function</i>, it will return **`false`** after the first call until the event occurs again, unless a <i>peek form</i> is used to prevent resetting it's event status.. 
+	///
+	/// **Function Parameter Forms:** 
+	///	
+	///			mouse_moved()
+	///			move_moved_peek()
+	///
+	/// <u><i>**move_moved_peek()**</i></u>
+	///
+	/// - When this form is used, this will return the mouse moved status, but will not reset it if it returns true. 
+	///   - (future calls will still return true until called without peeking)
+	/// - Otherwise, when <i>**mouse_moved()**</i> is used without peeking, the mouse-moved status is reset until the next time the user moves the mouse.
+	///
+	pub fn mouse_moved_peek(&self) -> bool { unsafe { ext_func::sage_rust_window_mouse_moved(self.id,true) } }
+
 
     /// [**mouse_r_button_clicked()**] - Returns **`true`** if the <i>right mouse button</i> was clicked, **`false`** if not and for subsequent events until the next right-mouse click.
 	///

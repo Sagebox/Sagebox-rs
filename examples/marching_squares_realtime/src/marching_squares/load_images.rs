@@ -20,8 +20,7 @@
 use super::MarchingSquares;
 use sagebox::*;
 
-//const IMAGE_PATH : &str = "C:\\Users\\robne\\source\\repos\\Marching Squares\\Marching Squares";    // Image path for image files or .PGR fil
-const IMAGE_PATH : &str = "./";    // Image path for image files or .PGR fil
+const IMAGE_PATH : &str = "./";    // Image path for image files or .PGR file
 
 macro_rules! get_file { ($file:expr) => { format!("{}\\{}",IMAGE_PATH,$file).as_str() } }           // Macro to make getting image path easier.
 
@@ -61,7 +60,6 @@ impl MarchingSquares
 ///
 pub (crate) fn load_pgr_images(&mut self) -> bool
 {
-//    let pgr = Sagebox::read_pgr_file(format!("{}\\GraphicFiles.pgr",IMAGE_PATH).as_str()); 
     let pgr = Sagebox::read_pgr_file(get_file!("marching_squares_images.pgr")); 
 
     // Load the files by their name in the GraphicFiles.txt -- in a larger, refactored project, these names would
@@ -94,6 +92,7 @@ pub (crate)  fn load_image_files(&mut self) -> bool
     self.bitmap_bot = Sagebox::read_image_file32(get_file!("images/splash-bot.bmp"));
     self.bitmap_zoom_window = Sagebox::read_image_file(get_file!("images/zoomwindow.jpg"));
     self.dev_win_background = Sagebox::read_image_file(get_file!("images/devwinbackground.jpg"));
+
     // Check validity of files (i.e. make sure they were found and read properly). 
 
     self.bitmap_top.is_valid() && self.bitmap_top.is_valid() && self.bitmap_zoom_window.is_valid() && self.dev_win_background.is_valid()

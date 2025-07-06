@@ -56,6 +56,7 @@
 		pub (crate)  unsafe fn sage_rust_window_mouse_drag_get_pos(window_id : i64, ret_point : &(i32,i32), func_index : i32) -> &(i32,i32);
 		pub (crate)  unsafe fn sage_rust_window_mouse_drag_ended(window_id : i64) -> bool;
 		pub (crate)  unsafe fn sage_rust_window_mouse_clicked(window_id : i64, peek : bool,right_button : bool,check_down : bool) -> bool;
+		pub (crate)  unsafe fn sage_rust_window_mouse_moved(window_id : i64, peek : bool) -> bool;
 		pub (crate)  unsafe fn sage_rust_window_mouse_wheel_moved(window_id : i64, get_value : bool,peek : bool) -> i32;
 		pub (crate)  unsafe fn sage_rust_window_mouse_get_pos<'a>(window_id : i64) -> &'a (i32,i32);
 		pub (crate)  unsafe fn sage_rust_window_show_window(window_id : i64, show_window : bool);
