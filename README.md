@@ -159,14 +159,17 @@ fn main{
 
 ## Table of Contents
 - [Why Sagebox? — Fun with Coding and Creative Programming](#why-sagebox--fun-with-coding-and-creative-programming)
-- [Designed to stay out of the way of your code](#designed-to-stay-out-of-the-way-of-your-code)
-- Beta Version
-- Event-Driven Architecture for Large-Scale Applications <i>(in final integration)</i>
-- Fast Real-Time 3-D GPU Graphics <i>(short-term roadmap item)</i>
-- High Performance Computing: Super-Fast AVX, Multi-Threading Functions <i>(short-term roadmap item)</i>
-- [Sagebox Roadmap](#roadmap)
+  - [Designed to stay out of the way of your code](#designed-to-stay-out-of-the-way-of-your-code)
+- [Using Sagebox in Console Mode](#using-sagebox-in-console-mode)   
+- [Fun with Graphics](#fun-with-graphics)
+- [Standalone and 3rd-Party Widgets](#standalone-and-3rd-party-widgets)
+  - [Embedding Widgets into Graphical Windows](#embedding-widgets-into-graphical-windows)
+- [Fast Real-Time 3-D GPU Graphics (short-term roadmap item)](#fast-real-time-3-d-gpu-graphics-short-term-roadmap-item)
+- [High Performance Computing: Super-Fast AVX, Multi-Threading Functions (short-term roadmap item)](#high-performance-computing-super-fast-avx-multi-threading-functions-short-term-roadmap-item)
+- [Event-Driven Architecture for Large-Scale Applications (in final integration)](#event-driven-architecture-for-large-scale-applications-in-final-integration)
+- [Sagebox Roadmap](#sagebox-roadmap)
 - [Support Sagebox](#support-sagebox)
-- [Contributing](#contributing)
+
 
 <br />
 <br />
