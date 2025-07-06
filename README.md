@@ -9,7 +9,7 @@
 
 Sagebox is a set of GUI tools that let you add windows, graphic controls, and graphical output to your Rust programs using linear, procedural code, without any boilerplate, or the overhead of an event-driven framework. 
 
-Built from scratch, Sagebox was designed as a platform-agnostic, comprehensive GUI — supporting everything from high-performance, cross-platform applications, fun-with-graphics programs, and console-mode-only projects using GUI controls for development or release.
+As a persistent (i.e. retained — but with no need to redraw) set of GUI tools, Sagebox was built from scratch as a platform-agnostic, comprehensive GUI — supporting everything from high-performance, cross-platform applications, fun-with-graphics programs, and console-mode-only projects using GUI controls for development or release.
 
 Sagebox drops cleanly into existing code or new projects when rapidly prototyping or exploring creative ideas.
 
@@ -29,7 +29,7 @@ Sagebox manages its own environment, so you don't have to keep track of any of t
 
 ## Quick Examples (Sagebox in a Nutshell)
 
-To create quick controls such as buttons, sliders, or text widgets, etc., you typically do this with two lines of code: one line to define the control, and one line to use it.
+To create quick controls such as buttons, sliders, or text widgets, etc., this is typically done with two lines of code: one line to define the control, and one line to use it.
 
 For example, if you want a slider and a button, all you need are these two lines of code:
 
@@ -41,7 +41,7 @@ let my_button = Sagebox::dev_button("Press me");
 
 ![output-dev-slider-box-0](https://user-images.githubusercontent.com/70604831/174466571-6d968e7b-3e87-4cfa-8060-602137041084.png)
 
-The above code uses the Dev Window controls (one of a few ways to create controls in Sagebox), which creates a slider labeled ***"box size"***, with a default range of 0-100 and default value of 0, followed by a button.
+The above code uses the Dev Window controls (one of a few ways to create controls in Sagebox), which creates a slider labeled ***"box size"***, with a default range of 0-100 and default value of 0, followed up by a separate button.
 
 Sagebox puts these in a window for you, and will delete them later when the program ends or the window is dismissed.
 When you want to use the controls, you can just call <i>**`box_slider.get_pos()`**</i> and <i>**`my_button.pressed()`**</i>.  You can also use <i>**`my_slider.moved()`**</i> to determine if the slider has been moved since the last time checked.
@@ -152,8 +152,7 @@ fn main{
 </p>
 
 <p align="center">
-  <em>If Sagebox looks useful, please consider starring or sponsoring the project.<br>
-  Even small support helps move it forward during active development.</em>
+  <em>Consider sponsoring (or adding a star to the project) to help fund continued development.</em>
 </p>
 
 ---
@@ -185,7 +184,7 @@ This approach can make programming more enjoyable by enabling more freeform, exp
  
 ## Designed to stay out of the way of your code
 
-Sagebox can be added to existing Rust code without changing its structure or setup—and you don’t need to write a “Sagebox program” to start using it. It works with native Rust types (like `i32`, `f32`, `(i32,i32)`) and integrates cleanly alongside other libraries, including other GUIs.
+Sagebox can be added to existing Rust code without changing its structure or setup, and you don’t need to write or orient your code a “Sagebox program” to start using it. It works with native Rust types (like `i32`, `f32`, `(i32,i32)`) and integrates cleanly alongside other libraries, including other GUIs.
 
 <br />
 <br />
@@ -200,6 +199,8 @@ In Console Mode, you can use Sagebox functions to help with the program user-int
 
 Because these are just simple function calls, you can put them into your existing code without changing your structure or interfering with the rest of your code.
 
+Sagebox requires no program initialization, so you can just drop in any GUI control or other Sagebox function anyhwere and it will work.
+
 Even if your end-product code doesn’t use any GUI-based graphic controls, Sagebox can still be useful during development, helping with user input and visualizing program flow while you’re developing and debugging.
 
 <br />
@@ -209,13 +210,13 @@ Even if your end-product code doesn’t use any GUI-based graphic controls, Sage
 
 ![output-collage-graphics](https://user-images.githubusercontent.com/70604831/174466730-86c6f38a-e743-4f97-be99-8d84be64d39f.png)
 
-Sagebox can also be used as a full GUI when you want it — with graphics, controls, and built-in support for creating GUI-based applications.
+Sagebox can also be used as a full graphical GUI when you want it — with graphics, controls, and built-in support for creating GUI-based applications.
 
 You can place specific controls, create graphic buttons, and use a wide range of drawing and other graphics functions together.
 
-Sagebox is designed to provide a full range of graphics and GUI controls when you want them — and stay out of the way when you don’t.
+Sagebox is designed to provide a full range of graphics and GUI controls when you want them, and stay out of the way when you don’t.
 
-The image above shows various programs created with Sagebox, from simple visuals to full applications. For most programs, graphics are generated with just a few lines of code, with some coming from more complex, larger-scale applications.
+The image above shows various programs created with Sagebox, from simple visuals to full applications. For most of the above images, graphics were generated with just a few lines of code, with some coming from more complex, larger-scale applications.
 
 <br />
 <br />
@@ -236,7 +237,7 @@ Widgets can be used in both procedural and event-driven applications, and do not
 
 Shown above: the Color Selector, Dial Widget, LCD Display Widget, and RGB Spline Widget.  
 
-> See the `plug_in_widgets` examples in the Github project examples
+> See the [`plug_in_widgets`](https://github.com/Sagebox/Sagebox-rs/tree/main/examples) examples in the Github project.
 
 ### Embedding Widgets into Graphical Windows
 
@@ -250,7 +251,7 @@ The LCD is drawn over a circuit board image, while the Dial Widget sits on a stu
 
 When the dial is moved, the LCD reflects its value in real time, and the same value is printed to the lower debug window using color-coded text to highlight values.
 
-The main interface window also uses a custom design with a rounded title bar and integrated graphic, for a more polished appearance than standard OS-provided window and title bar.
+The main interface window also uses a custom design with a rounded title bar and integrated graphic, for a more polished appearance than the usual standard OS-provided window and title bar.
 
 <br />
 <br />
@@ -259,7 +260,7 @@ The main interface window also uses a custom design with a rounded title bar and
 
 ![output-collage-gpu](https://user-images.githubusercontent.com/70604831/174467047-dda08078-cf76-4d76-af24-7689271d5a56.png)
 
-Sagebox's design includes a high-performance GPU graphics module for real-time 3-D visualization. The examples above demonstrate 60+ FPS rendering of complex, high-resolution surfaces — often exceeding three million polygons per frame — with minimal CPU usage.
+Sagebox's design includes a high-performance GPU graphics module for real-time 3-D visualization. The examples above demonstrate 60+ FPS GPU-based rendering of complex, high-resolution surfaces (often exceeding three million polygons per frame) with minimal CPU usage.
 
 Planned for release in the the short-term roadmap, with additional tools for building GPU-accelerated applications released in the following months.
 
@@ -297,7 +298,7 @@ The long-term roadmap is that once Sagebox’s initial release stabilizes, the t
 
 While not inherently needed for most applications, Sagebox is built on a high-performance, event-driven architecture that includes a full procedural layer that gives direct access to its full capabilities.
 
-This event-driven design means Sagebox supports fully event-driven programming by its own nature. The included procedural model is a feature that just about any applications can use as a powerful feature stemming from Sagebox's core event-driven design.
+This event-driven design means Sagebox supports fully event-driven programming by its own nature. The included procedural model is a feature that just about any application can use as a powerful feature stemming from Sagebox's core event-driven design, reducing need for an event-driven-GUI interface.
 
 Full access to the event-driven framework is currently being integrated into the Rust interface, with emphasis on memory safety, Rust idiomatic usage, and Borrow Checker requirements.
 
@@ -309,7 +310,7 @@ Sagebox is designed with long-term goals that extend well beyond the initial rel
 
 As Sagebox grows, these and more items will appear in future releases.  
 
-In addition to supporting quick, procedural creative flow, Sagebox is also rooted in serious development  for things like —  such as internal tooling, rapid prototyping, emulation, and GUI-based software 
+In addition to supporting quick, procedural creative flow, Sagebox is also rooted in serious development  for things such as internal tooling, rapid prototyping, emulation, and GUI-based software 
 used in critical systems.
 
 Feedback from the Rust community will help guide which features they'd like to see with more priority, or features not listed:
@@ -321,19 +322,26 @@ Feedback from the Rust community will help guide which features they'd like to s
 - **Designer Controls and Skins**
   - Sagebox includes a range of built-in controls (e.g., sliders, buttons, input boxes), and developers can create plug-in widgets.
   - Expanded custom-skin support and the ability to define fully custom controls are currently in progress.
+- **GPU Graphic Controls**
+  - Currently, controls are draw via the CPU and placed in a traditional window.
+  - A GPU version will place the controls on the GPU window that can be used in the same window as your graphics.
+    - The GPU control set will have the same flexibility and scalability as current controls.
+    - This is essentially an "immediate mode" GUI for the GPU window. 
+  - This has already been designed and implemention will hopefully start in the next year.
 - **Other Platforms**
    - Sagebox is written as platform-agnostic kernel.  Adding Android, macOS, and other platforms is a directional goal. 
 - **Fast, AVX image-processing functions**
   - Sagebox originated from the Sagelight Editor, which was heavily optimized with AVX-level code. The plan is to bring many of those fast image-processing routines into Sagebox as general-purpose functions, or possibly as a separate interfacing library that may be released as open source.
-  - Several of these functions are already used internally in Sagebox, and others produce compelling graphical examples — making it practical and worthwhile to expose them as standalone tools developers can use in their own projects.
+  - Several of these functions are already used internally in Sagebox, and others produce compelling graphical examples, making it practical and worthwhile to expose them as standalone tools developers can use in their own projects.
 - **Educational**
-  - While Sagebox already works well in educational contexts, the plan is to expand on this with ready-to-use "lab spaces" and other specific widgets and procedural frameworks to make implementation of GUI-based graphics and controls in a way where they don't become a significant part of the code just for a small project. 
-		 
-As Sagebox continues to grow, the developer community is invited to help shape its direction and contribute to making it even better.
+  - While Sagebox already works well in educational contexts, the plan is to expand on this with ready-to-use "lab spaces" and other specific widgets and procedural frameworks to make implementation of GUI-based graphics and controls in a way where they don't become a significant part of the code just for a small project.
 
 # Support Sagebox
 
 Sagebox is actively developed and welcomes early support from developers and contributors.
+
+As Sagebox continues to grow, the developer community is invited to help shape its direction and contribute to making it even better.
+
 Supporting the project helps prioritize key improvements, expand cross-platform capabilities, and maintain the momentum of a long-term, high-performance GUI system purpose-built for Rust.
 
 If Sagebox feels like something worth supporting, consider contributing to its continued development:
@@ -342,13 +350,4 @@ If Sagebox feels like something worth supporting, consider contributing to its c
 - **[OpenCollective (Coming Soon)]** — For larger or institutional support with public transparency.
 
 Your support helps fund new features, improve documentation, and prioritize cross-platform compatibility, along with other planned improvements.
-
-
-# Contributing
-
-Sagebox is still evolving — not just as a library, but as a direction. If you’re building something with it, running into limits, or thinking “this would be easier if…”, those are exactly the kinds of insights that shape where it goes next.
-
-Whether it’s opening an issue, improving examples, offering feedback on API ergonomics, or suggesting a small utility that would make things smoother — contributions don’t need to be code-heavy to be meaningful.
-
-The goal is to keep Sagebox clear, focused, and useful in the real world. If you want to help shape that, you’re welcome to be part of it.
 
