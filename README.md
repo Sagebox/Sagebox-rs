@@ -27,7 +27,7 @@ Sagebox manages its own environment, so you don't have to keep track of any of t
 
 > Although this page focuses on procedural examples, Sagebox fully supports event-driven programming for applications built around (or that prefer) that model, and is designed to fully support both models depending on the design of your program.
 
-> The first beta phase was based on the Windows version to validate Sagebox’s core architecture. It also runs under WINE on Linux, and native Linux support is now just a matter of system integration, with a direct path forward. See the [Sagebox Roadmap](#sagebox-roadmap) for details.
+> The first beta phase was based on the Windows version to validate Sagebox’s core architecture. It also runs under WINE on Linux, and true native Linux support is now just a matter of system integration, with a direct path forward. See the [Sagebox Roadmap](#sagebox-roadmap) for details.
 
 ## Quick Examples (Sagebox in a Nutshell)
 
