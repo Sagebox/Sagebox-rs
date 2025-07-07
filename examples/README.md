@@ -9,9 +9,14 @@ This directory contains the examples implementation of Sagebox for Rust.
 | `console_sine_wave`  | Console-Mode Programs with Graphics Controls. Easily Adding onto Existing Code. | Three short examples showing how to add GUI controls to a Console-Mode-only app in just a few lines (5-7 lines each). |
 | `double_pendulum`  | Teaching, Hobbyist, Fun-with-Graphics. Medium-sized projects. Non-GPU realtime graphics.  | Three graphical Double Pendulum examples, from simple graphics to comprehensive controls and abilities.     |
 | `image_view_sobel`  | One-Line Quick Functions. Industry, Research, Hobbyist. | Two examples using one-line Saegbox `ImageView` calls to display bitmap and image data in a GUI window.    |
-| `marching_squares_realtime`  | Larger projects.  Industry, Teaching, Research. Non-GPU realtime graphics. | A comprehensive 1500+ line real-time 60fps demo showing Sagebox in large-scale applications. |
+| `marching_squares_realtime`  | Larger projects. Multi-threading.  Industry, Teaching, Research. Non-GPU realtime graphics. | A comprehensive 1500+ line real-time 60fps demo showing Sagebox in large-scale applications. |
+| `meta_ball_explorer` | Graphics Programming. Multi-threading. Larger Projects, Education, Industry. Non-GPU realtime graphics |	A comprehensive, real-time 60fps Metaball Explorer featuring fully animated, melting and merging 3D metaballs rendered in a 2D graphics space — with continuous visual output, dynamic display styles, and a full set of graphic controls to play with. |
 | `plug_in_widgets`  | Industry, Embedded, Personslized Widgets, Arduino. | Demonstrates user-created plug-in widgets to emulate embedded systems graphically. |
 | `smooth_mandelbrot`  | Fun-with-Graphics, education. | A small, pure-graphics demo showing a smooth-colored Mandelbrot set with title text. |
+
+
+
+
 
 <br />
 <br />
@@ -203,6 +208,7 @@ There are three progressively enhanced sub-projects:
 - Industry, research, and advanced educational tools
 - Real-time visualization, algorithm exploration, and interactive control design
 - Example of non-GPU realtime graphics. 
+- Multi-threading
 
 ### Description 
 
@@ -228,6 +234,39 @@ This is an advanced and aggressive realtime 60fps program.  Compiling in debug m
 | Project Name | Description |
 |--|--|
 | `marching_squares_realtime` |  Full example with GUI controls, real-time rendering, zooming, and meta-ball contour display. |
+
+</details>
+
+
+## `meta_ball_explorer`
+
+### Uses
+
+- Graphics Programming
+- Fun-with-graphics (intensive graphics)
+- Industry, Education, Large-Scale projects
+- Non-GPU Programming
+- Phong Model Diffusion and Reflection
+- Multithreading
+
+This example is a personal favorite, and also the most complex and graphics-intensive demo so far. 
+
+The Meta Ball Explorer is a real-time, visually rich 60fps display of melting and merging 3D metaballs in motion — all within a 2D graphics space. In motion, it feels convincingly 3D, because it is — it's technically 3D, looking down from above.
+
+The result is visually striking and aesthetically rich.  
+
+As a “Meta Ball Explorer,” it includes multiple display modes that reveal how the Meta Balls are created — from simple circles and outlines to full 3D-style lighting and reflection, with soft shadows and subtle glowing effects.
+
+See the comments in the `meta_ball_explorer` example directory.
+
+> **Suggested use:** Run with `cargo run --release` for best performance (debug mode may not achieve 60fps, as this is an intensive-multi-threaded program).
+
+<details>
+<summary>Click for Project Description (1 project)</summary>
+
+| Project Name | Description |
+|--|--|
+| `meta_ball_explorer` | A comprehensive, real-time 60fps Metaball Explorer featuring fully animated, melting and merging 3D metaballs rendered in a 2D graphics space — with continuous visual output, dynamic display styles, and a full set of graphic controls to play with.|
 
 </details>
 
