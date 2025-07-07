@@ -27,6 +27,8 @@ Sagebox manages its own environment, so you don't have to keep track of any of t
 
 > Although this page focuses on procedural examples, Sagebox fully supports event-driven programming for applications built around (or that prefer) that model, and is designed to fully support both models depending on the design of your program.
 
+> The first beta phase was based on the Windows version to validate Sagebox’s core architecture. It also runs under WINE on Linux, and native Linux support is now a matter of system integration, with a direct path forward. See the [Sagebox Roadmap](#sagebox-roadmap) for details.
+
 ## Quick Examples (Sagebox in a Nutshell)
 
 To create quick controls such as buttons, sliders, or text widgets, etc., this is typically done with two lines of code: one line to define the control, and one line to use it.
@@ -319,7 +321,10 @@ used in critical systems.
 Feedback from the Rust community will help guide which features they'd like to see with more priority, or features not listed:
 
 - **Linux Implementation**
-  - A working Linux prototype is a high priority, with early builds targeted for 3–4 months after the initial release.
+  - Native Linux support is a high priority, with a working prototype targeted for 6–8 weeks after the Windows beta release.
+  - Sagebox already runs under WINE, which shows Linux version proof-of-concept — full Linux support remains the dedicated goal.
+  - The Sagebox core was written with Linux in mind, as a platform-agnostic, self-contained kernel already validated through extensive real-world use.
+  - Windows served as the initial development platform to test event handling and OS-level GUI architecture, with all Sagebox functions intentionally abstracted specifically for later multi-platform support, including Linux, macOS, and Android.
 - **Powerful GPU Functions**
   - As shown above, GPU functions are already well underway, and will work with the same Sagebox philosophy of ease-of-use and scalability.
 - **Designer Controls and Skins**
