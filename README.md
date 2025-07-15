@@ -17,7 +17,7 @@ Sagebox is also designed for education, hobbyist, and general creative, freeform
 
 > Sagebox has been used professionally in the tech industry by companies like Pentair and Pioneer, and most recently in the semiconductor field at ASML, where it was called “that magic program.” <br> 
 
-[<small>Click here to see examples on Youtube</small>](https://www.youtube.com/@projectsagebox6835)
+[Click here to see examples on Youtube](https://www.youtube.com/@projectsagebox6835)
    <br>
 ## Scalable, Easy-to-Use Procedural GUI Tools
 
