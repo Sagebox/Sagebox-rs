@@ -141,18 +141,18 @@ fn main{
 
 **Sagebox is actively developed and welcomes early support from developers and contributors.**
 
-> Sagebox was developed as a free, powerful and comprehensive GUI that is also very easy to use.<br>
+> Sagebox was developed as a powerful and comprehensive GUI that is also very easy to use.<br>
 > It is free to use in personal and commercial Rust projects.<br>
 > Contributions keep it free and also keep it growing.  (See [Sagebox Roadmap](#sagebox-roadmap))
 <br>
 
 <p align="center">
-  <a href="https://github.com/sponsors/your-username">
+  <a href="https://github.com/sponsors/Sagebox">
     <img src="https://img.shields.io/badge/Sponsor_on_GitHub-💖-e05d44?style=for-the-badge&logo=github" alt="GitHub Sponsors"/>
   </a>
   &nbsp;
-  <a href="https://github.com/your-username/sagebox">
-    <img src="https://img.shields.io/badge/Sagebox_Project-🌿-20c997?style=for-the-badge&logo=rust" alt="Sagebox on GitHub"/>
+  <a href="https://github.com/sponsors/Sagebox">
+    <img src="https://img.shields.io/badge/Sagebox_Project-🌿-20c997?style=for-the-badge&logo=rust" alt="Sponsor Sagebox on GitHub"/>
   </a>
 </p>
 
@@ -377,7 +377,7 @@ As Sagebox continues to grow, the developer community is invited to help shape i
 
 If Sagebox feels like something worth supporting, consider contributing to its continued development:
 
-- **[GitHub Sponsors](https://github.com/sponsors/YOUR_USERNAME)** — One-time or recurring donations.
+- **[GitHub Sponsors](https://github.com/sponsors/Sagebox)** — One-time or recurring donations.
 - **[OpenCollective (Coming Soon)]** — For larger or institutional support with public transparency.
 
 Your support helps add new features, documentation, and to continue to provide Sagebox free to the Rust community.
