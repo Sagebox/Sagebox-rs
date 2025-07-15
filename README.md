@@ -330,20 +330,18 @@ The first native Linux beta will follow soon after (approximately 4–6 weeks), 
 
 # Sagebox Roadmap
 
-Sagebox is designed with long-term goals that extend well beyond the initial release. Many of the features below are already in progress or planned for future development. 
+Sagebox is being released in stages as part of a broader architecture, with many of its planned features already designed, or in active development. 
 
-As Sagebox grows, these and more items will appear in future releases.  
+As described in [About This Release — Where We’re At and Where We’re Going](#about-this-release--where-were-at-and-where-were-going), Linux support is currently in progress, with a native release scheduled shortly after the Windows beta. The Windows-first release was intended to introduce Sagebox and demonstrate its capabilities as both a procedural and event-driven GUI system (with the Procedural elements emphasized in this document)
 
-In addition to supporting quick, procedural creative flow, Sagebox is also rooted in serious development  for things such as internal tooling, rapid prototyping, emulation, and GUI-based software 
-used in critical systems.
-
-Feedback from the Rust community will help guide which features they'd like to see with more priority, or features not listed:
+Feedback from the Rust community will help guide which features are prioritized, as well as ideas for features not listed here.
 
 - **Linux Implementation**
-  - Native Linux support is a high priority, with a working prototype targeted for 6–8 weeks after the Windows beta release.
-  - Sagebox already runs under WINE, which shows Linux version proof-of-concept — full Linux support remains the dedicated goal.
-  - The Sagebox core was written with Linux in mind, as a platform-agnostic, self-contained kernel already validated through extensive real-world use.
-  - Windows served as the initial development platform to test event handling and OS-level GUI architecture, with all Sagebox functions intentionally abstracted specifically for later multi-platform support, including Linux, macOS, and Android.
+  - Native Linux support is in progress, with a working prototype targeted for release 6–8 weeks after the Windows beta.
+  - A functional Linux proof-of-concept is already complete, validating Sagebox’s core architecture and platform abstraction.
+  - The Sagebox kernel was built from the start as a platform-agnostic, self-contained system, and has been validated through extensive real-world use.
+  - Windows served as the initial integration environment for event handling and OS-level GUI behavior.
+    - All functions were abstracted from the beginning to support clean multi-platform deployment, including Linux, macOS, and Android.
 - **Powerful GPU Functions**
   - As shown above, GPU functions are already well underway, and will work with the same Sagebox philosophy of ease-of-use and scalability.
 - **Designer Controls and Skins**
