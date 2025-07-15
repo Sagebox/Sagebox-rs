@@ -7,9 +7,9 @@
 
 # A High-Performance, Procedural GUI Designed for Rapid, Creative Development
 
-Sagebox is a set of GUI tools that let you add windows, graphic controls, and graphical output to your Rust programs using linear, procedural code, without any boilerplate, or the overhead of an event-driven framework. 
+Sagebox is a GUI architecture and set of tools that let you add windows, graphic controls, and graphical output to your Rust programs using linear, procedural code, without any boilerplate or the overhead of an event-driven framework. 
 
-As a persistent (i.e. retained — but with no need to redraw) set of GUI tools, Sagebox was built from scratch as a platform-agnostic, comprehensive GUI — supporting everything from high-performance, cross-platform applications, fun-with-graphics programs, and console-mode-only projects using GUI controls for development or release.
+As a persistent (i.e. similar to retained, but with no need to manage redraws) set of GUI tools, Sagebox was built from scratch as a cross-platform, comprehensive GUI, enabling the creation of high-performance, GUI control-based applications, fun-with-graphics programs, and console-mode projects with added GUI controls.
 
 Sagebox drops cleanly into existing code or new projects when rapidly prototyping or exploring creative ideas.
 
@@ -27,7 +27,7 @@ Sagebox manages its own environment, so you don't have to keep track of any of t
 
 > Although this page focuses on procedural examples, Sagebox fully supports event-driven programming for applications built around (or that prefer) that model, and is designed to fully support both models depending on the design of your program.
 
-> This first beta phase is based on the Windows version to validate Sagebox’s core architecture. It also runs under WINE on Linux, and true native Linux support is now just a matter of system integration, with a direct path forward. See the [Sagebox Roadmap](#sagebox-roadmap) for details.
+> This initial beta is based on the Windows version to showcase Sagebox’s core architecture ahead of the Linux release and gather community feedback.  <br /> See [Sagebox Roadmap](#sagebox-roadmap)  and [About This Release](#about-this-release--where-were-at-and-where-were-going) for details.
 
 ## Quick Examples (Sagebox in a Nutshell)
 
@@ -169,6 +169,7 @@ fn main{
 - [Fast Real-Time 3-D GPU Graphics (short-term roadmap item)](#fast-real-time-3-d-gpu-graphics-short-term-roadmap-item)
 - [High Performance Computing: Super-Fast AVX, Multi-Threading Functions (short-term roadmap item)](#high-performance-computing-super-fast-avx-multi-threading-functions-short-term-roadmap-item)
 - [Event-Driven Architecture for Large-Scale Applications (in final integration)](#event-driven-architecture-for-large-scale-applications-in-final-integration)
+- [About This Release — Where We’re At and Where We’re Going](#about-this-release--where-were-at-and-where-were-going)
 - [Sagebox Roadmap](#sagebox-roadmap)
 - [Support Sagebox](#support-sagebox)
 
@@ -308,6 +309,24 @@ This event-driven design means Sagebox supports fully event-driven programming b
 Full access to the event-driven framework is currently being integrated into the Rust interface, with emphasis on memory safety, Rust idiomatic usage, and Borrow Checker requirements.
 
 ---
+
+# About This Release — Where We’re At and Where We’re Going
+
+This marks Phase 1 of the Sagebox release: a Windows-based beta published early while Linux support and Rust integration continue progressing. The purpose of this release is to introduce Sagebox, gather meaningful feedback, and finalize design decisions before cross-platform code paths are fully merged.
+
+### Why Windows First
+
+While the original plan was for a simultaneous Linux and Windows launch, the decision was made to release Windows first in order to gather community feedback that can directly improve the Linux version.
+
+### Your Feedback Matters
+
+This early beta offers a chance to test features, GUI controls responsiveness, and general interface behavior in real-world use. And of course any bugs or other issues that may occur.
+
+### What’s Next
+
+Phase 2 will arrive in 3-4 weeks after this release (phase 1).  This release will bring more functionality and a full Windows version with many more real-world examples. 
+
+The first native Linux beta will follow soon after (approximately 4–6 weeks), with much of the Linux-specific and architectural groundwork already complete or in active development.
 
 # Sagebox Roadmap
 
