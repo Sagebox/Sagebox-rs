@@ -15,8 +15,10 @@ Sagebox drops cleanly into existing code or new projects when rapidly prototypin
 
 Sagebox is also designed for education, hobbyist, and general creative, freeform development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control (or to remove them).
 
-> Sagebox has been used professionally in the tech industry by companies like Pentair and Pioneer, and most recently in the semiconductor field at ASML, where it was called “that magic program.”
+> Sagebox has been used professionally in the tech industry by companies like Pentair and Pioneer, and most recently in the semiconductor field at ASML, where it was called “that magic program.” <br> 
 
+[<small>Click here to see examples on Youtube</small>](https://www.youtube.com/@projectsagebox6835)
+   <br>
 ## Scalable, Easy-to-Use Procedural GUI Tools
 
 Sagebox is a procedural-first GUI toolkit that lets you build console-mode programs or full graphical applications using straightforward, linear code. 
@@ -27,7 +29,7 @@ Sagebox manages its own environment, so you don't have to keep track of any of t
 
 > Although this page focuses on procedural examples, Sagebox fully supports event-driven programming for applications built around (or that prefer) that model, and is designed to fully support both models depending on the design of your program.
 
-> This early beta is based on the Windows version to showcase Sagebox’s core architecture ahead of the Linux release and gather community feedback.  <br /> See [Sagebox Roadmap](#sagebox-roadmap)  and [About This Release](#about-this-release--where-were-at-and-where-were-going) for details.
+> This initial beta is based on the Windows version to showcase Sagebox’s core architecture ahead of the Linux release and gather community feedback.  <br /> See [Sagebox Roadmap](#sagebox-roadmap)  and [About This Release](#about-this-release--where-were-at-and-where-were-going) for details.
 
 ## Quick Examples (Sagebox in a Nutshell)
 
