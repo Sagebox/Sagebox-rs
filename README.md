@@ -13,7 +13,7 @@ As a persistent (i.e. similar to retained, but with no need to manage redraws) s
 
 Sagebox drops cleanly into existing code or new projects when rapidly prototyping or exploring creative ideas.
 
-Sagebox is also designed for education, hobbyist, and general creative, free-form development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control (or to remove them).
+Sagebox is also designed for education, hobbyist, and general creative, freeform development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control (or to remove them).
 
 > Sagebox has been used professionally in the tech industry by companies like Pentair and Pioneer, and most recently in the semiconductor field at ASML, where it was called “that magic program.”
 
@@ -139,9 +139,10 @@ fn main{
 
 **Sagebox is actively developed and welcomes early support from developers and contributors.**
 
-> **Sagebox isn’t just a GUI — it’s a set of GUI-based tools.**  
-> One-line graphics display, native OS dialogs, color pickers, and visual debugging widgets — all available without changing your program’s structure.
-
+> Sagebox was developed as a free, powerful and comprehensive GUI that is also very easy to use.<br>
+> It is free to use in personal and commercial Rust projects.<br>
+> Contributions keep it free and also keep it growing.  (See [Sagebox Roadmap](#sagebox-roadmap))
+<br>
 
 <p align="center">
   <a href="https://github.com/sponsors/your-username">
@@ -365,14 +366,17 @@ Feedback from the Rust community will help guide which features are prioritized,
 
 Sagebox is actively developed and welcomes early support from developers and contributors.
 
+> Sagebox was developed as a free, powerful and comprehensive GUI that is also very easy to use.<br>
+> It is free to use in personal and commercial Rust projects.<br>
+
 As Sagebox continues to grow, the developer community is invited to help shape its direction and contribute to making it even better.
 
-Supporting the project helps prioritize key improvements, expand cross-platform capabilities, and maintain the momentum of a long-term, high-performance GUI system purpose-built for Rust.
+
 
 If Sagebox feels like something worth supporting, consider contributing to its continued development:
 
 - **[GitHub Sponsors](https://github.com/sponsors/YOUR_USERNAME)** — One-time or recurring donations.
 - **[OpenCollective (Coming Soon)]** — For larger or institutional support with public transparency.
 
-Your support helps fund new features, improve documentation, and prioritize cross-platform compatibility, along with other planned improvements.
+Your support helps add new features, documentation, and to continue to provide Sagebox free to the Rust community.
 
