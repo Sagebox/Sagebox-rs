@@ -23,6 +23,9 @@ The three examples in this section progressively build on each other do a little
 | `console_sine_wave_simple` | Adds two sliders (Amplitude, Period) and a Stop button. The sliders dynamically affect the wave; the Stop Button exits the loop.  (As with all console-mdode programs, Control-C may also be pressed top stop the program) |
 | `console_sine_wave_more` | Adds a Pause/Resume button.  Demonstrates  Console-Mode usage to create a simple button to stop or pause data output, or to signal some action in the middle of a loop. |
 
+# Watch the Demo on Youtube
+
+[Sine Wave - Drop-In GUI Controls for Rust Console Programs  (Github Demo)](https://youtu.be/A6atjDW5Jxg)
 
 # About this Example
 

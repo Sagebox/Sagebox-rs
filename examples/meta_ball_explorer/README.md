@@ -31,6 +31,10 @@ blob, and another hour or two to add the 3-D lighting and other effects.
 The rest followed along as details like the sliders, checkboxes, and
 other items were added to make a larger program with a lot more exploration options.
 
+## Watch this Demo on Youtube
+
+[60fps Metaball Explorer — Github Demo | GUI Programming in Rust](https://youtu.be/3ZqbC32nUuk)
+
 ## 2D Classical Graphics vs. GPU
 
 This program is written without using the GPU, showing that we can create amazing things with

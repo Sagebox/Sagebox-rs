@@ -18,6 +18,10 @@ time spent integrating UI controls like sliders and checkboxes to explore behavi
 The idea here is to show how a using a program using Sagebox can grow naturally — starting with a 
 physics or graphics algorithm and adding interactivity without needing to restructure the program.
 
+## Watch the Demo on Youtube
+
+[Marching Squares Realtime — Github Demo | GUI Programming in Rust](https://youtu.be/3weWnIuiCec)
+
 ## Notes on Graphics and GPU Usage
 
 This version uses CPU-based rendering only — no GPU acceleration. The goal is to demonstrate 

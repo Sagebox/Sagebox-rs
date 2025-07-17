@@ -59,3 +59,7 @@ This example provides a good introduction to using keywords.
 - The function `write_s()` is similarly used with keywords to set the font size and to center the text in the window.
 
 See comments in the `main()` function for more details. 
+
+## Watch the Demo on Youtube
+
+[Handling Events in  a 'Hello World' Program — Github Demo | GUI Programming in Rust](https://youtu.be/yePFHoCyoS0)

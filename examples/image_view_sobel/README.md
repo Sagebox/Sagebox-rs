@@ -41,3 +41,8 @@ or displayed and further managed with a returned object.
 This program shows a simple use of the image_view_before_after() function in Sagebox that allows
 a bitmap image or vector array-based image (color or monochrome) before & after to be viewed with just one line of code, 
 or displayed and further managed with a returned object. 
+
+## Watch the Demo on Youtube
+
+[One-Line Image View Functions — Github Demo | GUI Programming in Rust](https://youtu.be/yJyATaCLZ9U)
+

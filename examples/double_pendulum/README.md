@@ -15,6 +15,11 @@ Here's how each project builds upon the last:
 | `double_pendulum_full_controls` | Expands on the previous version with GUI controls such as sliders, checkboxes, and input boxes, offering full control over physical parameters (e.g., pendulum mass) and display options (e.g., trail length, timing output). |
 
 
+# Watch the Demo on Youtube
+
+[Interactive Double Pendulum 60fps — Github Demo | GUI Programming in Rust](https://youtu.be/AMr4QsUcKvA)
+
+
 ## Practical Context and Applications
 
 The Double Pendulum program is a great example of using Sagebox in education, research, and engineering. 

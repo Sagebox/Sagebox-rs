@@ -5,12 +5,12 @@ This directory contains the examples implementation of Sagebox for Rust.
 
 | Example | Applicable Uses | Description (see below for more details on each example) |
 |-----------------|---------------| ----------------------------------------------------------------------------------|
-| `handle_events` | Learning Basics. | A 10-line example demonstrating one method of using events when using controls and drawing graphics. |
-| `console_sine_wave`  | Console-Mode Programs with Graphics Controls. Easily Adding onto Existing Code. | Three short examples showing how to add GUI controls to a Console-Mode-only app in just a few lines (5-7 lines each). |
-| `double_pendulum`  | Teaching, Hobbyist, Fun-with-Graphics. Medium-sized projects. Non-GPU realtime graphics.  | Three graphical Double Pendulum examples, from simple graphics to comprehensive controls and abilities.     |
-| `image_view_sobel`  | One-Line Quick Functions. Industry, Research, Hobbyist. | Two examples using one-line Saegbox `ImageView` calls to display bitmap and image data in a GUI window.    |
-| `marching_squares_realtime`  | Larger projects. Multi-threading.  Industry, Teaching, Research. Non-GPU realtime graphics. | A comprehensive 1500+ line real-time 60fps demo showing Sagebox in large-scale applications. |
-| `meta_ball_explorer` | Graphics Programming. Multi-threading. Larger Projects, Education, Industry. Non-GPU realtime graphics |	A comprehensive, real-time 60fps Metaball Explorer featuring fully animated, melting and merging 3D metaballs rendered in a 2D graphics space — with continuous visual output, dynamic display styles, and a full set of graphic controls to play with. |
+| `handle_events` | Learning Basics. | A 10-line example demonstrating one method of using events when using controls and drawing graphics.<br>[See this Example on Youtube](https://youtu.be/yePFHoCyoS0) |
+| `console_sine_wave`  | Console-Mode Programs with Graphics Controls. Easily Adding onto Existing Code. | Three short examples showing how to add GUI controls to a Console-Mode-only app in just a few lines (5-7 lines each).<br>[See this Example on Youtube](https://youtu.be/A6atjDW5Jxg) |
+| `double_pendulum`  | Teaching, Hobbyist, Fun-with-Graphics. Medium-sized projects. Non-GPU realtime graphics.  | Three graphical Double Pendulum examples, from simple graphics to comprehensive controls and abilities.<br>[See this Example on Youtube](https://youtu.be/AMr4QsUcKvA)    |
+| `image_view_sobel`  | One-Line Quick Functions. Industry, Research, Hobbyist. | Two examples using one-line Saegbox `ImageView` calls to display bitmap and image data in a GUI window. <br>[See this Example on Youtube](https://youtu.be/yJyATaCLZ9U)   |
+| `marching_squares_realtime` | Larger projects. Multi-threading.  Industry, Teaching, Research. Non-GPU realtime graphics. | A comprehensive 1500+ line real-time 60fps demo showing Sagebox in large-scale applications. <br>[See this Example on Youtube](https://youtu.be/3weWnIuiCec) |
+| `meta_ball_explorer` | Graphics Programming. Multi-threading. Larger Projects, Education, Industry. Non-GPU realtime graphics |	A comprehensive, real-time 60fps Metaball Explorer featuring fully animated, melting and merging 3D metaballs rendered in a 2D graphics space — with continuous visual output, dynamic display styles, and a full set of graphic controls to play with. <br>[See this Example on Youtube](https://youtu.be/3ZqbC32nUuk) |
 | `plug_in_widgets`  | Industry, Embedded, Personslized Widgets, Arduino. | Demonstrates user-created plug-in widgets to emulate embedded systems graphically. |
 | `smooth_mandelbrot`  | Fun-with-Graphics, education. | A small, pure-graphics demo showing a smooth-colored Mandelbrot set with title text. |
 
