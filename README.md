@@ -7,13 +7,13 @@
 
 # A High-Performance, Procedural GUI Designed for Rapid, Creative Development
 
-Sagebox is a GUI architecture and set of tools that let you add windows, graphic controls, and graphical output to your Rust programs using linear, procedural code, without any boilerplate or the overhead of an event-driven framework. 
+Sagebox was created to make it easy to develop full-scale, procedural applications with advanced GUI controls, while also bringing back the simplicity of creating fun-with-graphics programs.
 
-As a persistent (i.e. similar to retained, but with no need to manage redraws) set of GUI tools, Sagebox was built from scratch as a cross-platform, comprehensive GUI, enabling the creation of high-performance, GUI control-based applications, fun-with-graphics programs, and console-mode projects with added GUI controls.
+With simple, linear code, Sagebox lets you create windows, GUI controls and graphical output, without any boilerplate or the overhead of an event-driven framework.
 
-Sagebox drops cleanly into existing code or new projects when rapidly prototyping or exploring creative ideas.
+Built from scratch as a cross-platform, comprehensive GUI, Sagebox supports everything from advanced GUI applications to simple creative and educational programs, as well as console-mode projects with drop-in GUI controls. Sagebox uses a persistent GUI model, which is similar to a retained model, but manages redraws and interface state for your program.
 
-Sagebox is also designed for education, hobbyist, and general creative, freeform development and rapid prototyping without the need to write a lot of interface code just to add a button, slider, or other control (or to remove them).
+Sagebox is also designed for hobbyist, educational and creative use, enabling rapid prototyping and creative development without the need to write a lot of interface code just to add a button, slider, or other control (or to remove them).
 
 > Sagebox has been used professionally in the tech industry by companies like Pentair and Pioneer, and most recently in the semiconductor field at ASML, where it was called “that magic program.” <br> 
 
@@ -29,7 +29,8 @@ Sagebox manages its own environment, so you don't have to keep track of any of t
 
 > Although this page focuses on procedural examples, Sagebox fully supports event-driven programming for applications built around (or that prefer) that model, and is designed to fully support both models depending on the design of your program.
 
-> This initial beta is released on Windows to highlight Sagebox’s core architecture ahead of the Linux release. The Windows version is fully functional — please feel free to explore it and share feedback as development continues.  <br /> See [Sagebox Roadmap](#sagebox-roadmap)  and [About This Release](#about-this-release--where-were-at-and-where-were-going) for details.
+
+> **note**: This Windows preview showcases Sagebox's core architecture as Rust migration continues, with Linux support coming soon.  The Windows version is fully functional — please feel free to explore it and share feedback as development continues<br />  See [Sagebox Roadmap](#sagebox-roadmap)  and - [About This Release](#about-this-release--preview-version-and-rust-migration) for details.
 
 ## Quick Examples (Sagebox in a Nutshell)
 
@@ -172,7 +173,7 @@ fn main{
 - [Fast Real-Time 3-D GPU Graphics (short-term roadmap item)](#fast-real-time-3-d-gpu-graphics-short-term-roadmap-item)
 - [High Performance Computing: Super-Fast AVX, Multi-Threading Functions (short-term roadmap item)](#high-performance-computing-super-fast-avx-multi-threading-functions-short-term-roadmap-item)
 - [Event-Driven Architecture for Large-Scale Applications (in final integration)](#event-driven-architecture-for-large-scale-applications-in-final-integration)
-- [About This Release — Where We’re At and Where We’re Going](#about-this-release--where-were-at-and-where-were-going)
+- [About This Release — Preview Version and Rust Migration](#about-this-release--preview-version-and-rust-migration)
 - [Sagebox Roadmap](#sagebox-roadmap)
 - [Support Sagebox](#support-sagebox)
 
@@ -313,19 +314,35 @@ Full access to the event-driven framework is currently being integrated into the
 
 ---
 
-# About This Release — Where We’re At and Where We’re Going
+# About This Release — Preview Version and Rust Migration
 
-This marks Phase 1 of the Sagebox release: a Windows-based beta published early while Linux support and Rust integration continue progressing. The purpose of this release is to introduce Sagebox, gather meaningful feedback, and finalize design decisions before cross-platform code paths are fully merged.
+This marks the first phase of the Sagebox release: a Windows-based beta published ahead of schedule while Linux support and Rust migration continue progressing.
 
-### Why Windows First
+## Rust Migration: Rust as a Native Platform
 
-While the original plan was for a simultaneous Linux and Windows launch, the decision was made to release Windows first in order to gather community feedback that can directly improve the Linux version.
+The Sagebox kernel was initially written in C++ as part of a multi-platform, language-agnostic architecture.  But when it came time to build the interface for Rust, something unexpected happened: the integration of Rust didn’t just work well, it solved long-standing architectural challenges that weren’t otherwise easily addressed.
 
-### Your Feedback Matters
+
+## Rust Migration Already in Progress 
+
+Sagebox predates Rust’s rise to widespread adoption, but its core abstracted architecture fits right into the Rust paradigm. 
+
+Sagebox is a highly multi-threaded GUI system with real-time performance demands that directly benefit from strong memory safety. In other languages, this can require runtime overhead not required with Rust's memory-safety model, resulting in safer code and higher performance.
+
+ As Rust integration progressed, many of Rust's core strengths became apparent very quickly. For example, in Sagebox, Rust now governs the lifecycle of core GUI control elements. While components of the original kernel remain in C++ during the migration to Rust, Rust now owns their memory.
+
+As Rust migration continues, additional kernel components will be reimplemented in Rust.
+
+
+## Why Windows First
+
+The original plan was to release Sagebox more broadly once Linux support was available. However, the decision was made to release this Windows-based preview early to introduce its architecture and gather community feedback during Rust migration, especially since the Windows version has been stable for some time.
+
+## Your Feedback Matters
 
 This early beta offers a chance to test features, GUI controls responsiveness, and general interface behavior in real-world use. And of course any bugs or other issues that may occur.
 
-### What’s Next
+## What’s Next
 
 Phase 2 will arrive in 3-4 weeks after this release (phase 1).  This release will bring more functionality and a full Windows version with many more real-world examples. 
 
@@ -335,7 +352,7 @@ The first native Linux beta will follow soon after (approximately 4–6 weeks), 
 
 Sagebox is being released in stages as part of a broader architecture, with many of its planned features already designed, or in active development. 
 
-As described in [About This Release — Where We’re At and Where We’re Going](#about-this-release--where-were-at-and-where-were-going), Linux support is currently in progress, with a native release scheduled shortly after the Windows beta. The Windows-first release was intended to introduce Sagebox and demonstrate its capabilities as both a procedural and event-driven GUI system (with the Procedural elements emphasized in this document)
+As described in - [About This Release — Preview Version and Rust Migration](#about-this-release--preview-version-and-rust-migration), Linux support is currently in progress, with a native release scheduled shortly after the Windows beta. The Windows-first release was intended to introduce Sagebox and demonstrate its capabilities as both a procedural and event-driven GUI system (with the Procedural elements emphasized in this document)
 
 Feedback from the Rust community will help guide which features are prioritized, as well as ideas for features not listed here.
 
