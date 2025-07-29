@@ -7,6 +7,8 @@
 
 # A High-Performance, Procedural GUI Designed for Rapid, Creative Development
 
+### Write plain linear, procedural code with no boilerplate.
+
 Sagebox was created to make it easy to develop full-scale, procedural applications with advanced GUI controls, while also bringing back the simplicity of creating fun-with-graphics programs.
 
 With simple, linear code, Sagebox lets you create windows, GUI controls and graphical output, without any boilerplate or the overhead of an event-driven framework.
