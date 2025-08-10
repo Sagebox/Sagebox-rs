@@ -146,7 +146,7 @@ fn main{
 
 > Sagebox was developed as a powerful and comprehensive GUI that is also very easy to use.<br>
 > It is free to use in personal and commercial Rust projects.<br>
-> Contributions keep it free and also keep it growing.  (See [Sagebox Roadmap](#sagebox-roadmap))
+> Your contributions drive continued development, bring new features and improvements, and help fast-track Linux support.  (See [Sagebox Roadmap](#sagebox-roadmap))
 <br>
 
 <p align="center">
