@@ -385,18 +385,15 @@ Feedback from the Rust community will help guide which features are prioritized,
 
 # Support Sagebox
 
-Sagebox is actively developed and welcomes early support from developers and contributors.
+Sagebox is actively developed and welcomes support from developers and contributors.
 
 > Sagebox was developed as a free, powerful and comprehensive GUI that is also very easy to use.<br>
 > It is free to use in personal and commercial Rust projects.<br>
 
-Your contributions drive continued development, bring new features and improvements, and help fast-track Linux support. (See Sagebox Roadmap)
-
+Your contributions drive continued development and help fast-track Linux support. (See [Sagebox Roadmap](#sagebox-roadmap))
 
 If Sagebox feels like something worth supporting, consider contributing to its continued development:
 
-- **[GitHub Sponsors](https://github.com/sponsors/Sagebox)** — One-time or recurring donations.
+- **[GitHub Sponsors](https://github.com/sponsors/Sagebox)**
 - **[OpenCollective (Coming Soon)]**
-
-Your support helps add new features, documentation, and to continue to provide Sagebox free to the Rust community.
 
